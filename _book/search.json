@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Little Book of Smiley Plots",
+    "section": "",
+    "text": "Preface\nA key part of any ancient DNA project is to show that the DNA is exactly that - ancient. A key authentication method is to show the presence of elevated C to T deamination patterns (and the complementary G to A) at the end of DNA molecules, originally reported by (Briggs et al. 2007).\nThese patterns can be plotted in what have been colloquially known as ’Smiley Plots. However, there can be a wide range of smiley plots, some which show valid ancient DNA, and others that do not - either due to not actually having true ancient DNA but also from laboratory and/or bioinformatic artifacts.\nThis book aims\n\n\n\n\nBriggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green, Janet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. “Patterns of Damage in Genomic DNA Sequences from a Neandertal.” Proceedings of the National Academy of Sciences of the United States of America 104 (37): 14616–21. https://doi.org/10.1073/pnas.0704665104."
+  },
+  {
+    "objectID": "intro.html#what-are-deamination-patterns",
+    "href": "intro.html#what-are-deamination-patterns",
+    "title": "Introduction",
+    "section": "What are deamination patterns?",
+    "text": "What are deamination patterns?"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Briggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green,\nJanet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. “Patterns of\nDamage in Genomic DNA Sequences from a Neandertal.”\nProceedings of the National Academy of Sciences of the United States\nof America 104 (37): 14616–21. https://doi.org/10.1073/pnas.0704665104."
+  }
+]

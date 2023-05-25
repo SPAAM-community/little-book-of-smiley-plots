@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+A key part of any ancient DNA project is to show that the DNA is exactly that - ancient. A key authentication method is to show the presence of elevated C to T deamination patterns (and the complementary G to A) at the end of DNA molecules, originally reported by [@Briggs2007-ao]. 
+
+These patterns can be plotted in what have been colloquially known as 'Smiley Plots. However, there can be a wide range of smiley plots, some which show valid ancient DNA, and others that do not - either due to not actually having true ancient DNA but also from laboratory and/or bioinformatic artifacts.
+
+This book aims

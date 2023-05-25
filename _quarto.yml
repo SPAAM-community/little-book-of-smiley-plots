@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "The Little Book of Smiley Plots"
+  subtitle: "A collection of ancient DNA patterns and their causes"
+  author: "The SPAAM Community"
+  date: "25/05/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Valid Smiley Plots"
+      chapters:
+        - double-stranded.qmd
+        - single-stranded.qmd
+    - part: "Problematic Smiley Plots"
+      chapters:
+        - insufficient-reads.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
