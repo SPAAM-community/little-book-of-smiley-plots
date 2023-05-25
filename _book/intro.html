@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -167,6 +186,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-are-deamination-patterns" id="toc-what-are-deamination-patterns" class="nav-link active" data-scroll-target="#what-are-deamination-patterns">What are deamination patterns?</a></li>
+  <li><a href="#how-to-generate-damage-patterns" id="toc-how-to-generate-damage-patterns" class="nav-link" data-scroll-target="#how-to-generate-damage-patterns">How to generate damage patterns</a>
+  <ul class="collapse">
+  <li><a href="#genomics" id="toc-genomics" class="nav-link" data-scroll-target="#genomics">Genomics</a></li>
+  <li><a href="#metagenomics" id="toc-metagenomics" class="nav-link" data-scroll-target="#metagenomics">Metagenomics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -192,8 +216,53 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-are-deamination-patterns" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="what-are-deamination-patterns">What are deamination patterns?</h2>
+<!-- TODO: describe biochemsityr and cause -->
+</section>
+<section id="how-to-generate-damage-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-generate-damage-patterns">How to generate damage patterns</h2>
+<p>There is a range of software that can generate damage pattern plots from ancient DNA NGS libraries. The vast majority of tools require to be of sequencing reads aligned to a reference genome. Here we make suggestions of some tools that you can use to generate such plots.</p>
+<section id="genomics" class="level3">
+<h3 class="anchored" data-anchor-id="genomics">Genomics</h3>
+<p>These tools general take BAM files as input (i.e., after mapping of FASTQ files to a reference genome using a short-read aligner )</p>
+<ul>
+<li>mapDamage
+<ul>
+<li>Source: <a href="https://github.com/ginolhac/mapDamage">https://github.com/ginolhac/mapDamagee</a></li>
+<li>Documentation: <a href="https://ginolhac.github.io/mapDamage">https://ginolhac.github.io/mapDamage</a></li>
+<li>Citation: <span class="citation" data-cites="Jonsson2013-zb">(<a href="references.html#ref-Jonsson2013-zb" role="doc-biblioref">Jónsson et al. 2013</a>)</span></li>
+</ul></li>
+<li>DamageProfiler
+<ul>
+<li>Source: <a href="https://github.com/Integrative-Transcriptomics/DamageProfiler">https://github.com/Integrative-Transcriptomics/DamageProfiler</a></li>
+<li>Documentation: <a href="https://damageprofiler.readthedocs.io/en/latest/">https://damageprofiler.readthedocs.io/en/latest/</a></li>
+<li>Citation: <span class="citation" data-cites="Neukamm2021-ul">(<a href="references.html#ref-Neukamm2021-ul" role="doc-biblioref">Neukamm, Peltzer, and Nieselt 2021</a>)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="metagenomics" class="level3">
+<h3 class="anchored" data-anchor-id="metagenomics">Metagenomics</h3>
+<ul>
+<li>MaltExtract
+<ul>
+<li>Source: <a href="https://github.com/rhuebler/MaltExtract">https://github.com/rhuebler/MaltExtract</a></li>
+<li>Documentation: <a href="https://github.com/rhuebler/MaltExtract">https://github.com/rhuebler/MaltExtract</a></li>
+<li>Citation: <span class="citation" data-cites="Hubler2019-qw">(<a href="references.html#ref-Hubler2019-qw" role="doc-biblioref">Hübler et al. 2019</a>)</span></li>
+</ul></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Hubler2019-qw" class="csl-entry" role="listitem">
+Hübler, Ron, Felix M Key, Christina Warinner, Kirsten I Bos, Johannes Krause, and Alexander Herbig. 2019. <span>“<span>HOPS</span>: Automated Detection and Authentication of Pathogen <span>DNA</span> in Archaeological Remains.”</span> <em>Genome Biology</em> 20 (1): 280. <a href="https://doi.org/10.1186/s13059-019-1903-0">https://doi.org/10.1186/s13059-019-1903-0</a>.
+</div>
+<div id="ref-Jonsson2013-zb" class="csl-entry" role="listitem">
+Jónsson, Hákon, Aurélien Ginolhac, Mikkel Schubert, Philip L F Johnson, and Ludovic Orlando. 2013. <span>“<span class="nocase">mapDamage2</span>.0: Fast Approximate Bayesian Estimates of Ancient <span>DNA</span> Damage Parameters.”</span> <em>Bioinformatics</em> 29 (13): 1682–84. <a href="https://doi.org/10.1093/bioinformatics/btt193">https://doi.org/10.1093/bioinformatics/btt193</a>.
+</div>
+<div id="ref-Neukamm2021-ul" class="csl-entry" role="listitem">
+Neukamm, Judith, Alexander Peltzer, and Kay Nieselt. 2021. <span>“<span>DamageProfiler</span>: Fast Damage Pattern Calculation for Ancient <span>DNA</span>.”</span> <em>Bioinformatics</em> 37 (20): 3652–53. <a href="https://doi.org/10.1093/bioinformatics/btab190">https://doi.org/10.1093/bioinformatics/btab190</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->

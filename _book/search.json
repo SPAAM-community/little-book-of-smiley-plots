@@ -14,10 +14,24 @@
     "text": "What are deamination patterns?"
   },
   {
+    "objectID": "intro.html#how-to-generate-damage-patterns",
+    "href": "intro.html#how-to-generate-damage-patterns",
+    "title": "Introduction",
+    "section": "How to generate damage patterns",
+    "text": "How to generate damage patterns\nThere is a range of software that can generate damage pattern plots from ancient DNA NGS libraries. The vast majority of tools require to be of sequencing reads aligned to a reference genome. Here we make suggestions of some tools that you can use to generate such plots.\n\nGenomics\nThese tools general take BAM files as input (i.e., after mapping of FASTQ files to a reference genome using a short-read aligner )\n\nmapDamage\n\nSource: https://github.com/ginolhac/mapDamagee\nDocumentation: https://ginolhac.github.io/mapDamage\nCitation: (Jónsson et al. 2013)\n\nDamageProfiler\n\nSource: https://github.com/Integrative-Transcriptomics/DamageProfiler\nDocumentation: https://damageprofiler.readthedocs.io/en/latest/\nCitation: (Neukamm, Peltzer, and Nieselt 2021)\n\n\n\n\nMetagenomics\n\nMaltExtract\n\nSource: https://github.com/rhuebler/MaltExtract\nDocumentation: https://github.com/rhuebler/MaltExtract\nCitation: (Hübler et al. 2019)\n\n\n\n\n\n\nHübler, Ron, Felix M Key, Christina Warinner, Kirsten I Bos, Johannes Krause, and Alexander Herbig. 2019. “HOPS: Automated Detection and Authentication of Pathogen DNA in Archaeological Remains.” Genome Biology 20 (1): 280. https://doi.org/10.1186/s13059-019-1903-0.\n\n\nJónsson, Hákon, Aurélien Ginolhac, Mikkel Schubert, Philip L F Johnson, and Ludovic Orlando. 2013. “mapDamage2.0: Fast Approximate Bayesian Estimates of Ancient DNA Damage Parameters.” Bioinformatics 29 (13): 1682–84. https://doi.org/10.1093/bioinformatics/btt193.\n\n\nNeukamm, Judith, Alexander Peltzer, and Kay Nieselt. 2021. “DamageProfiler: Fast Damage Pattern Calculation for Ancient DNA.” Bioinformatics 37 (20): 3652–53. https://doi.org/10.1093/bioinformatics/btab190."
+  },
+  {
+    "objectID": "double-stranded.html",
+    "href": "double-stranded.html",
+    "title": "1  Smiley Plot of Double Stranded DNA Libraries",
+    "section": "",
+    "text": "Figure 1.1: Example of a smiley plot of a double stranded DNA library. Data taken from (Star et al. 2017). Damage data calculated using DamageProfiler and plotted using R and ggplot2.\n\n\n\n\nThis is the ‘classical’ ancient DNA plot that you will see most often. You expect to see a smooth curve from the beginning of the read (position 1) to a flat line in the middle (e.g. positions 10-25 in mapDamage plots).\n\n\n\n\nStar, Bastiaan, Sanne Boessenkool, Agata T Gondek, Elena A Nikulina, Anne Karin Hufthammer, Christophe Pampoulie, Halvor Knutsen, et al. 2017. “Ancient DNA Reveals the Arctic Origin of Viking Age Cod from Haithabu, Germany.” Proceedings of the National Academy of Sciences of the United States of America 114 (34): 9152–57. https://doi.org/10.1073/pnas.1710186114."
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Briggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green,\nJanet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. “Patterns of\nDamage in Genomic DNA Sequences from a Neandertal.”\nProceedings of the National Academy of Sciences of the United States\nof America 104 (37): 14616–21. https://doi.org/10.1073/pnas.0704665104."
+    "text": "Briggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green,\nJanet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. “Patterns of\nDamage in Genomic DNA Sequences from a Neandertal.”\nProceedings of the National Academy of Sciences of the United States\nof America 104 (37): 14616–21. https://doi.org/10.1073/pnas.0704665104.\n\n\nHübler, Ron, Felix M Key, Christina Warinner, Kirsten I Bos, Johannes\nKrause, and Alexander Herbig. 2019. “HOPS: Automated\nDetection and Authentication of Pathogen DNA in\nArchaeological Remains.” Genome Biology 20 (1): 280. https://doi.org/10.1186/s13059-019-1903-0.\n\n\nJónsson, Hákon, Aurélien Ginolhac, Mikkel Schubert, Philip L F Johnson,\nand Ludovic Orlando. 2013. “mapDamage2.0: Fast Approximate Bayesian Estimates\nof Ancient DNA Damage Parameters.”\nBioinformatics 29 (13): 1682–84. https://doi.org/10.1093/bioinformatics/btt193.\n\n\nNeukamm, Judith, Alexander Peltzer, and Kay Nieselt. 2021.\n“DamageProfiler: Fast Damage Pattern Calculation for\nAncient DNA.” Bioinformatics 37 (20):\n3652–53. https://doi.org/10.1093/bioinformatics/btab190.\n\n\nStar, Bastiaan, Sanne Boessenkool, Agata T Gondek, Elena A Nikulina,\nAnne Karin Hufthammer, Christophe Pampoulie, Halvor Knutsen, et al.\n2017. “Ancient DNA Reveals the Arctic Origin of\nViking Age Cod from Haithabu, Germany.” Proceedings of the\nNational Academy of Sciences of the United States of America 114\n(34): 9152–57. https://doi.org/10.1073/pnas.1710186114."
   }
 ]

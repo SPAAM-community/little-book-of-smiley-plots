@@ -1,1 +1,36 @@
 # Smiley Plot of Double Stranded DNA Libraries
+
+<!-- TODO Finish other end -->
+
+```{r}
+#| label: fig-double-stranded
+#| fig-cap: Example of a smiley plot of a double stranded DNA library. Data taken from [@Star2017-cj]. Damage data calculated using [DamageProfiler](/intro.qmd) and plotted using R and ggplot2.
+#| echo: false
+#| warning: false
+#| error: false
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+type_colours <- c("C>T" = "red", "G>A" = "blue", "A>C" = "grey", "A>G" = "grey", "A>T" = "grey", "C>A" = "grey", "C>G" = "grey", "G>C" = "grey", "G>T" = "grey", "T>A" = "grey", "T>C" = "grey",	"T>G" = "grey", "insertion" = "purple", "deletion" = "green")
+
+raw_double_stranded <- readr::read_tsv("assets/data/double-stranded.txt", comment = "#")
+
+long_double_stranded <- raw_double_stranded %>%   
+    rename(insertion = `->ACGT`, deletion = `ACGT>-`, Position = Pos) %>%
+    pivot_longer(contains(c(">", "insertion", "deletion")), names_to = "Mutation Type", values_to = "Frequency") %>%
+    mutate(`Mutation Type` = factor(`Mutation Type`, levels = rev(names(type_colours))))
+
+ggplot(long_double_stranded, aes(x = Position, y = Frequency, colour = `Mutation Type`)) +
+    geom_line() +
+    ylim(0, 0.30) +
+    scale_colour_manual(values = type_colours, guide = guide_legend(reverse = TRUE)) +
+    theme_minimal()
+
+```
+
+This is the 'classical' ancient DNA plot that you will see most often. You expect to see a smooth curve from the beginning of the read (position 1) to a flat line in the middle (e.g. positions 10-25 in mapDamage plots).
+
+If you get such a plot in ancient DNA double-stranded libraries, this is a good indication you have authentic ancient DNA!

@@ -1,3 +1,29 @@
 # Introduction {.unnumbered}
 
 ## What are deamination patterns? {.unnumbered}
+
+<!-- TODO: describe biochemsityr and cause -->
+
+## How to generate damage patterns
+
+There is a range of software that can generate damage pattern plots from ancient DNA NGS libraries. The vast majority of tools require to be of sequencing reads aligned to a reference genome. Here we make suggestions of some tools that you can use to generate such plots.
+
+### Genomics
+
+These tools general take BAM files as input (i.e., after mapping of FASTQ files to a reference genome using a short-read aligner )
+
+- mapDamage
+  - Source: [https://github.com/ginolhac/mapDamagee](https://github.com/ginolhac/mapDamage)
+  - Documentation: [https://ginolhac.github.io/mapDamage](https://ginolhac.github.io/mapDamage)
+  - Citation: [@Jonsson2013-zb]
+- DamageProfiler
+  - Source: [https://github.com/Integrative-Transcriptomics/DamageProfiler](https://github.com/Integrative-Transcriptomics/DamageProfiler)
+  - Documentation: [https://damageprofiler.readthedocs.io/en/latest/](https://damageprofiler.readthedocs.io/en/latest/)
+  - Citation: [@Neukamm2021-ul]
+
+### Metagenomics
+
+- MaltExtract
+  - Source: [https://github.com/rhuebler/MaltExtract](https://github.com/rhuebler/MaltExtract)
+  - Documentation:  [https://github.com/rhuebler/MaltExtract](https://github.com/rhuebler/MaltExtract)
+  - Citation: [@Hubler2019-qw]
