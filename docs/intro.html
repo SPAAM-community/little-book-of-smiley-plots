@@ -141,13 +141,19 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./double-stranded.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Smiley Plot of Double Stranded DNA Libraries</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Smiley pplot of double stranded DNA libraries</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./single-stranded.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Smiley Plot of Single Stranded DNA Libraries</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./partial-udg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Smiley plot of partial UDG treatment lLibraries</span></span></a>
   </div>
 </li>
       </ul>
@@ -164,7 +170,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./insufficient-reads.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Smiley Plot of Insufficient Reads</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Smiley Plot of Insufficient Reads</span></span></a>
   </div>
 </li>
       </ul>
@@ -185,8 +191,8 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-are-deamination-patterns" id="toc-what-are-deamination-patterns" class="nav-link active" data-scroll-target="#what-are-deamination-patterns">What are deamination patterns?</a></li>
-  <li><a href="#how-to-generate-damage-patterns" id="toc-how-to-generate-damage-patterns" class="nav-link" data-scroll-target="#how-to-generate-damage-patterns">How to generate damage patterns</a>
+  <li><a href="#what-are-damage-patterns" id="toc-what-are-damage-patterns" class="nav-link active" data-scroll-target="#what-are-damage-patterns">What are damage patterns</a></li>
+  <li><a href="#how-are-damage-patterns-analysed" id="toc-how-are-damage-patterns-analysed" class="nav-link" data-scroll-target="#how-are-damage-patterns-analysed">How are damage patterns analysed</a>
   <ul class="collapse">
   <li><a href="#genomics" id="toc-genomics" class="nav-link" data-scroll-target="#genomics">Genomics</a></li>
   <li><a href="#metagenomics" id="toc-metagenomics" class="nav-link" data-scroll-target="#metagenomics">Metagenomics</a></li>
@@ -214,29 +220,38 @@ div.csl-indent {
 
 </header>
 
-<section id="what-are-deamination-patterns" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-are-deamination-patterns">What are deamination patterns?</h2>
-<!-- TODO: describe biochemsityr and cause -->
-<p><a href="#fig-briggs-2007">Figure&nbsp;<span>1</span></a></p>
+<section id="what-are-damage-patterns" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="what-are-damage-patterns">What are damage patterns</h2>
+<p>Damage patterns on ancient DNA molecules occur due to increased miscoding lesions at the end of molecules. When DNA molecules start to decompose (i.e., repair mechanisms are lost once an organism dies), the very long DNA molecules start to fragment due to ‘nicks’ occurring on the sugar-phosphate of one of the strands, weakening the structure and causing the molecule to cleave into two. However, this cleavage is not necessarily ‘clean’, i.e., occurs on both strands at the same position. Rather, when the two uneven ‘nicks’ cause the DNA molecule to cleave into two, this results in a ‘jagged’ break - with the molecules having ‘overhangs’ of one strand being longer than the other of each of the new two now-‘independent’ molecules.</p>
+<p>The resulting single-stranded overhangs leave the nitrogenous-bases ‘exposed’ on the overhang to the surrounding environment. In such cases, of the four nucleotides, it was found that cytosines undergo deamination at a higher rate than the others via hydrolysis. The loss of a cytosines amine group results in a nucleotide structure normally found more often in RNA molecules - uracils. The reason why palaeogenomicists report ‘C to T’ damage patterns is because some polymerases will misread uracils as an adenine, and will incorporate a thymine on the opposite strand during DNA amplification. During each subsequent amplification cycle, the mis-incorporated T will propagate across the subsequent copies of the original DNA molecule.</p>
+<p>To summarise, the unequal ends of fragmented DNA molecules results in the increased chance of damage to the nucleotides to the overhangs. This structural damage occurs more frequently in cytosines over the other bases, however these ‘damaged’ cytosines are misread by polymerases during DNA amplification to result on thymines on the opposite strand (rather than the expected complementary guanines).</p>
+<p>It is important to note that the library construction method will influence damage, e.g., is the library constructed from double-stranded DNA or single-stranded DNA, is the polymerase in the initial library amplification proof-reading or not, and so on. Throughout the rest of this book, each damage pattern will be described in the context of the library construction method of the data used to generate each damage pattern.</p>
+<p>The increased <em>frequency</em> to C to T was detected at the end of molecules could only be detected with the invention of ‘Next Generation Sequencing’ or ‘NGS’ <span class="citation" data-cites="Shendure2008-fh">(<a href="references.html#ref-Shendure2008-fh" role="doc-biblioref">Shendure and Ji 2008</a>)</span>. NGS allowed palaeogenomicists to easily sequence thousands to millions of DNA molecules in one go in an untargeted manner, which subsequently meant that molecules from across <em>entire</em> genomes could be compared against a reference genome. Bioinformaticially, the increase of C to T miscoding lesions were detected by measuring the frequency of mutations at each position across each read, where each read was derived from a different place on the reference genome. As many different places across the reference genome would have different base composition, one would expect to see an approximately random distribution of mutations across the genome. However it was observed in Neanderthals DNA libraries that the frequency of C to T mutation in the first ~10 base pairs of the 5p end of double-stranded library molecules had a higher frequency than the expected approximate equal distribution across each type of mutation, as seen in <a href="#fig-briggs-2007">Figure&nbsp;<span>1</span></a>.</p>
 <div id="fig-briggs-2007" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="assets/images/briggs_2007_original_Damage_pattern.jpeg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: First reported damage pattern from Neanderthal DNA <span class="citation" data-cites="Briggs2007-ao">(<a href="references.html#ref-Briggs2007-ao" role="doc-biblioref">Briggs et al. 2007</a>)</span>. Reproduced here under free access.</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;1: First reported misincorporation lesion ‘smiley plot’ from Neanderthal DNA <span class="citation" data-cites="Briggs2007-ao">(<a href="references.html#ref-Briggs2007-ao" role="doc-biblioref">Briggs et al. 2007</a>)</span>. Reproduced here under free access.</figcaption>
 </figure>
 </div>
 </section>
-<section id="how-to-generate-damage-patterns" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-generate-damage-patterns">How to generate damage patterns</h2>
-<p>There is a range of software that can generate damage pattern plots from ancient DNA NGS libraries. The vast majority of tools require to be of sequencing reads aligned to a reference genome. Here we make suggestions of some tools that you can use to generate such plots.</p>
+<section id="how-are-damage-patterns-analysed" class="level2">
+<h2 class="anchored" data-anchor-id="how-are-damage-patterns-analysed">How are damage patterns analysed</h2>
+<p>There is a range of software that can generate damage pattern plots from ancient DNA NGS libraries. The vast majority of tools require to be of sequencing reads aligned to a reference genome or genomes. Here we make suggestions of some tools that you can use to generate such plots. The example damage patterns in this book will mostly be derived from genomics tools, as metagenomic damage plot generation may account for other factors than the ‘classical’ ancient DNA damage plot.</p>
 <section id="genomics" class="level3">
 <h3 class="anchored" data-anchor-id="genomics">Genomics</h3>
-<p>These tools general take BAM files as input (i.e., after mapping of FASTQ files to a reference genome using a short-read aligner )</p>
+<p>These tools generally take BAM files as input (i.e., after mapping of FASTQ files to a reference genome using a short-read aligner):</p>
 <ul>
 <li>mapDamage
 <ul>
 <li>Source: <a href="https://github.com/ginolhac/mapDamage">https://github.com/ginolhac/mapDamagee</a></li>
 <li>Documentation: <a href="https://ginolhac.github.io/mapDamage">https://ginolhac.github.io/mapDamage</a></li>
 <li>Citation: <span class="citation" data-cites="Jonsson2013-zb">(<a href="references.html#ref-Jonsson2013-zb" role="doc-biblioref">Jónsson et al. 2013</a>)</span></li>
+</ul></li>
+<li>PMDtools
+<ul>
+<li>Source: <a href="https://github.com/pontussk/PMDtools">https://github.com/pontussk/PMDtools</a></li>
+<li>Documentation: <a href="https://github.com/pontussk/PMDtools">https://github.com/pontussk/PMDtools</a></li>
+<li>Citation: <span class="citation" data-cites="Skoglund2014-hj">(<a href="references.html#ref-Skoglund2014-hj" role="doc-biblioref">Skoglund et al. 2014</a>)</span></li>
 </ul></li>
 <li>DamageProfiler
 <ul>
@@ -248,6 +263,7 @@ div.csl-indent {
 </section>
 <section id="metagenomics" class="level3">
 <h3 class="anchored" data-anchor-id="metagenomics">Metagenomics</h3>
+<p>These tools may take different approaches to generating their alignments (or even alignment free methods).</p>
 <ul>
 <li>MaltExtract
 <ul>
@@ -255,10 +271,25 @@ div.csl-indent {
 <li>Documentation: <a href="https://github.com/rhuebler/MaltExtract">https://github.com/rhuebler/MaltExtract</a></li>
 <li>Citation: <span class="citation" data-cites="Hubler2019-qw">(<a href="references.html#ref-Hubler2019-qw" role="doc-biblioref">Hübler et al. 2019</a>)</span></li>
 </ul></li>
+<li>pyDamage
+<ul>
+<li>Source: <a href="https://github.com/maxibor/pydamage">https://github.com/maxibor/pydamage</a></li>
+<li>Documentation: <a href="https://pydamage.readthedocs.io/en/0.7/">https://pydamage.readthedocs.io/en/0.7/</a></li>
+<li>Citation: <span class="citation" data-cites="Borry2021-lt">(<a href="references.html#ref-Borry2021-lt" role="doc-biblioref">Borry et al. 2021</a>)</span></li>
+</ul></li>
+<li>MetaDMG
+<ul>
+<li>Source: <a href="https://github.com/metaDMG-dev/metaDMG-core">https://github.com/metaDMG-dev/metaDMG-core</a></li>
+<li>Documentation: <a href="https://metadmg-dev.github.io/metaDMG-core/">https://metadmg-dev.github.io/metaDMG-core/</a></li>
+<li>Citation: <span class="citation" data-cites="Michelsen2022-nx">(<a href="references.html#ref-Michelsen2022-nx" role="doc-biblioref">Michelsen et al. 2022</a>)</span></li>
+</ul></li>
 </ul>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Borry2021-lt" class="csl-entry" role="listitem">
+Borry, Maxime, Alexander Hübner, Adam B Rohrlach, and Christina Warinner. 2021. <span>“<span>PyDamage</span>: Automated Ancient Damage Identification and Estimation for Contigs in Ancient <span>DNA</span> de Novo Assembly.”</span> <em>PeerJ</em> 9 (July): e11845. <a href="https://doi.org/10.7717/peerj.11845">https://doi.org/10.7717/peerj.11845</a>.
+</div>
 <div id="ref-Briggs2007-ao" class="csl-entry" role="listitem">
 Briggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green, Janet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. <span>“Patterns of Damage in Genomic <span>DNA</span> Sequences from a Neandertal.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 104 (37): 14616–21. <a href="https://doi.org/10.1073/pnas.0704665104">https://doi.org/10.1073/pnas.0704665104</a>.
 </div>
@@ -268,8 +299,17 @@ Hübler, Ron, Felix M Key, Christina Warinner, Kirsten I Bos, Johannes Krause, a
 <div id="ref-Jonsson2013-zb" class="csl-entry" role="listitem">
 Jónsson, Hákon, Aurélien Ginolhac, Mikkel Schubert, Philip L F Johnson, and Ludovic Orlando. 2013. <span>“<span class="nocase">mapDamage2</span>.0: Fast Approximate Bayesian Estimates of Ancient <span>DNA</span> Damage Parameters.”</span> <em>Bioinformatics</em> 29 (13): 1682–84. <a href="https://doi.org/10.1093/bioinformatics/btt193">https://doi.org/10.1093/bioinformatics/btt193</a>.
 </div>
+<div id="ref-Michelsen2022-nx" class="csl-entry" role="listitem">
+Michelsen, Christian, Mikkel Winther Pedersen, Antonio Fernandez-Guerra, Lei Zhao, Troels C Petersen, and Thorfinn Sand Korneliussen. 2022. <span>“<span>MetaDMG</span> – a Fast and Accurate Ancient <span>DNA</span> Damage Toolkit for Metagenomic Data.”</span> <em>bioRxiv</em>. <a href="https://doi.org/10.1101/2022.12.06.519264">https://doi.org/10.1101/2022.12.06.519264</a>.
+</div>
 <div id="ref-Neukamm2021-ul" class="csl-entry" role="listitem">
 Neukamm, Judith, Alexander Peltzer, and Kay Nieselt. 2021. <span>“<span>DamageProfiler</span>: Fast Damage Pattern Calculation for Ancient <span>DNA</span>.”</span> <em>Bioinformatics</em> 37 (20): 3652–53. <a href="https://doi.org/10.1093/bioinformatics/btab190">https://doi.org/10.1093/bioinformatics/btab190</a>.
+</div>
+<div id="ref-Shendure2008-fh" class="csl-entry" role="listitem">
+Shendure, Jay, and Hanlee Ji. 2008. <span>“Next-Generation <span>DNA</span> Sequencing.”</span> <em>Nature Biotechnology</em> 26 (10): 1135–45. <a href="https://doi.org/10.1038/nbt1486">https://doi.org/10.1038/nbt1486</a>.
+</div>
+<div id="ref-Skoglund2014-hj" class="csl-entry" role="listitem">
+Skoglund, Pontus, Bernd H Northoff, Michael V Shunkov, Anatoli P Derevianko, Svante Pääbo, Johannes Krause, and Mattias Jakobsson. 2014. <span>“Separating Endogenous Ancient <span>DNA</span> from Modern Day Contamination in a Siberian Neandertal.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 111 (6): 2229–34. <a href="https://doi.org/10.1073/pnas.1318934111">https://doi.org/10.1073/pnas.1318934111</a>.
 </div>
 </div>
 </section>
@@ -517,7 +557,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./double-stranded.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Smiley Plot of Double Stranded DNA Libraries</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Smiley pplot of double stranded DNA libraries</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

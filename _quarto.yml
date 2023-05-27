@@ -1,9 +1,8 @@
 project:
   type: book
   output-dir: docs
-
-preview:
-  port: 4200
+  preview:
+    port: 4200
 
 book:
   title: "The Little Book of Smiley Plots"
@@ -17,6 +16,7 @@ book:
       chapters:
         - double-stranded.qmd
         - single-stranded.qmd
+        - partial-udg.qmd
     - part: "Problematic Smiley Plots"
       chapters:
         - insufficient-reads.qmd
@@ -28,5 +28,5 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt

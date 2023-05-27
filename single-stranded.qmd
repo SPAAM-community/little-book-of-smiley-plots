@@ -1,1 +1,31 @@
 # Smiley Plot of Single Stranded DNA Libraries
+
+
+::: {layout-ncol=2}
+
+<div>
+_R/CODE IMAGE GOES HERE_
+```{r}
+#| label: fig-title-goes-here
+#| fig-cap: _CAPTION GOES HERE_. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+## R code goes here
+
+```
+
+</div>
+
+<div>
+
+<!-- ![_CAPTION GOES HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+</div>
+
+:::
+
+_SMILEY PLOT CAPTION GOES HERE_

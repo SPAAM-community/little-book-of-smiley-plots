@@ -1,8 +1,8 @@
-# Smiley Plot of Double Stranded DNA Libraries
+# Smiley plot of double stranded DNA libraries
 
 > Start PLACEHOLDER!
 
-::: {layout-ncol=2 layout-nrow=1}
+::: {layout-ncol=2}
 
 <div>
 ```{r}
@@ -83,3 +83,4 @@ This is the 'classical' ancient DNA plot that you will see most often. You expec
 If you get such a plot in ancient DNA double-stranded libraries, this is a good indication you have authentic ancient DNA! 
 
 
+<!-- TODO: FINISH DESCRIPTION -->

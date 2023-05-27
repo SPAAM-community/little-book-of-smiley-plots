@@ -214,3 +214,174 @@
   doi      = "10.21105/joss.01686",
   issn     = "2475-9066"
 }
+
+@ARTICLE{Shendure2008-fh,
+  title    = "Next-generation {DNA} sequencing",
+  author   = "Shendure, Jay and Ji, Hanlee",
+  journal  = "Nature biotechnology",
+  volume   =  26,
+  number   =  10,
+  pages    = "1135--1145",
+  abstract = "DNA sequence represents a single format onto which a broad range
+              of biological phenomena can be projected for high-throughput data
+              collection. Over the past three years, massively parallel DNA
+              sequencing platforms have become widely available, reducing the
+              cost of DNA sequencing by over two orders of magnitude, and
+              democratizing the field by putting the sequencing capacity of a
+              major genome center in the hands of individual investigators.
+              These new technologies are rapidly evolving, and near-term
+              challenges include the development of robust protocols for
+              generating sequencing libraries, building effective new approaches
+              to data-analysis, and often a rethinking of experimental design.
+              Next-generation DNA sequencing has the potential to dramatically
+              accelerate biological and biomedical research, by enabling the
+              comprehensive analysis of genomes, transcriptomes and interactomes
+              to become inexpensive, routine and widespread, rather than
+              requiring significant production-scale efforts.",
+  month    =  oct,
+  year     =  2008,
+  url      = "http://dx.doi.org/10.1038/nbt1486",
+  doi      = "10.1038/nbt1486",
+  pmid     =  18846087,
+  issn     = "1087-0156,1546-1696",
+  language = "en"
+}
+@UNPUBLISHED{Michelsen2022-nx,
+  title    = "{MetaDMG} – A fast and accurate ancient {DNA} damage toolkit for
+              metagenomic data",
+  author   = "Michelsen, Christian and Pedersen, Mikkel Winther and
+              Fernandez-Guerra, Antonio and Zhao, Lei and Petersen, Troels C and
+              Korneliussen, Thorfinn Sand",
+  journal  = "bioRxiv",
+  pages    = "2022.12.06.519264",
+  abstract = "AbstractMotivationUnder favourable conditions DNA molecules can
+              persist for hundreds of thousands of years. Such genetic remains
+              make up invaluable resources to study past assemblages,
+              populations, and even the evolution of species. However, DNA is
+              subject to degradation, and hence over time decrease to ultra low
+              concentrations which makes it highly prone to contamination by
+              modern sources. Strict precautions are therefore necessary to
+              ensure that DNA from modern sources does not appear in the final
+              data is authenticated as ancient. The most generally accepted and
+              widely applied authenticity for ancient DNA studies is to test for
+              elevated deaminated cytosine residues towards the termini of the
+              molecules: DNA damage. To date, this has primarily been used for
+              single organisms and recently for read assemblies, however, these
+              methods are not applicable for estimating DNA damage for ancient
+              metagenomes with tens and even hundreds of thousands of
+              species.MethodsWe presentmetaDMG, a novel framework and toolkit
+              that allows for the estimation, quantification and visualization
+              of postmortem damage for single reads, single genomes and even
+              metagenomic environmental DNA by utilizing the taxonomic branching
+              structure. It bypasses any need for initial classification,
+              splitting reads by individual organisms, and realignment. We have
+              implemented a Bayesian approach that combines a modified geometric
+              damage profile with a beta-binomial model to fit the entire model
+              to the individual misincorporations at all taxonomic
+              levels.ResultsWe evaluated the performance using both simulated
+              and published environmental DNA datasets and compared to existing
+              methods when relevant. We findmetaDMGto be an order of magnitude
+              faster than previous methods and more accurate – even for complex
+              metagenomes. Our simulations show thatmetaDMGcan estimate DNA
+              damage at taxonomic levels down to 100 reads, that the estimated
+              uncertainties decrease with increased number of reads and that the
+              estimates are more significant with increased number of C to T
+              misincorporations.ConclusionmetaDMGis a state-of-the-art program
+              for aDNA damage estimation and allows for the computation of
+              nucleotide misincorporation, GC-content, and DNA fragmentation for
+              both simple and complex ancient genomic datasets, making it a
+              complete package for ancient DNA damage authentication.",
+  month    =  dec,
+  year     =  2022,
+  url      = "https://www.biorxiv.org/content/10.1101/2022.12.06.519264v1.abstract",
+  doi      = "10.1101/2022.12.06.519264",
+  language = "en"
+}
+@ARTICLE{Borry2021-lt,
+  title     = "{PyDamage}: automated ancient damage identification and
+               estimation for contigs in ancient {DNA} de novo assembly",
+  author    = "Borry, Maxime and Hübner, Alexander and Rohrlach, Adam B and
+               Warinner, Christina",
+  journal   = "PeerJ",
+  publisher = "PeerJ Inc.",
+  volume    =  9,
+  pages     = "e11845",
+  abstract  = "DNA de novo assembly can be used to reconstruct longer stretches
+               of DNA (contigs), including genes and even genomes, from short
+               DNA sequencing reads. Applying this technique to metagenomic data
+               derived from archaeological remains, such as paleofeces and
+               dental calculus, we can investigate past microbiome functional
+               diversity that may be absent or underrepresented in the modern
+               microbiome gene catalogue. However, compared to modern samples,
+               ancient samples are often burdened with environmental
+               contamination, resulting in metagenomic datasets that represent
+               mixtures of ancient and modern DNA. The ability to rapidly and
+               reliably establish the authenticity and integrity of ancient
+               samples is essential for ancient DNA studies, and the ability to
+               distinguish between ancient and modern sequences is particularly
+               important for ancient microbiome studies. Characteristic patterns
+               of ancient DNA damage, namely DNA fragmentation and cytosine
+               deamination (observed as C-to-T transitions) are typically used
+               to authenticate ancient samples and sequences, but existing tools
+               for inspecting and filtering aDNA damage either compute it at the
+               read level, which leads to high data loss and lower quality when
+               used in combination with de novo assembly, or require manual
+               inspection, which is impractical for ancient assemblies that
+               typically contain tens to hundreds of thousands of contigs. To
+               address these challenges, we designed PyDamage, a robust,
+               automated approach for aDNA damage estimation and authentication
+               of de novo assembled aDNA. PyDamage uses a likelihood ratio based
+               approach to discriminate between truly ancient contigs and
+               contigs originating from modern contamination. We test PyDamage
+               on both on simulated aDNA data and archaeological paleofeces, and
+               we demonstrate its ability to reliably and automatically identify
+               contigs bearing DNA damage characteristic of aDNA. Coupled with
+               aDNA de novo assembly, Pydamage opens up new doors to explore
+               functional diversity in ancient metagenomic datasets.",
+  month     =  jul,
+  year      =  2021,
+  url       = "https://peerj.com/articles/11845/",
+  keywords  = "metagenomics; aDNA; ancient DNA; assembly; damage; de novo;
+               automated",
+  doi       = "10.7717/peerj.11845",
+  issn      = "2167-8359",
+  language  = "en"
+}
+@ARTICLE{Skoglund2014-hj,
+  title    = "Separating endogenous ancient {DNA} from modern day contamination
+              in a Siberian Neandertal",
+  author   = "Skoglund, Pontus and Northoff, Bernd H and Shunkov, Michael V and
+              Derevianko, Anatoli P and Pääbo, Svante and Krause, Johannes and
+              Jakobsson, Mattias",
+  journal  = "Proceedings of the National Academy of Sciences of the United
+              States of America",
+  volume   =  111,
+  number   =  6,
+  pages    = "2229--2234",
+  abstract = "One of the main impediments for obtaining DNA sequences from
+              ancient human skeletons is the presence of contaminating modern
+              human DNA molecules in many fossil samples and laboratory
+              reagents. However, DNA fragments isolated from ancient specimens
+              show a characteristic DNA damage pattern caused by miscoding
+              lesions that differs from present day DNA sequences. Here, we
+              develop a framework for evaluating the likelihood of a sequence
+              originating from a model with postmortem degradation-summarized in
+              a postmortem degradation score-which allows the identification of
+              DNA fragments that are unlikely to originate from present day
+              sources. We apply this approach to a contaminated Neandertal
+              specimen from Okladnikov Cave in Siberia to isolate its endogenous
+              DNA from modern human contaminants and show that the reconstructed
+              mitochondrial genome sequence is more closely related to the
+              variation of Western Neandertals than what was discernible from
+              previous analyses. Our method opens up the potential for genomic
+              analysis of contaminated fossil material.",
+  month    =  feb,
+  year     =  2014,
+  url      = "http://dx.doi.org/10.1073/pnas.1318934111",
+  keywords = "human evolution; paleogenomics",
+  doi      = "10.1073/pnas.1318934111",
+  pmc      = "PMC3926038",
+  pmid     =  24469802,
+  issn     = "0027-8424,1091-6490",
+  language = "en"
+}

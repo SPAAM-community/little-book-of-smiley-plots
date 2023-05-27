@@ -1,5 +1,4 @@
-# Smiley Plot of insufficient reads
-
+# Smiley plot of partial UDG treatment lLibraries
 
 ::: {layout-ncol=2}
 
