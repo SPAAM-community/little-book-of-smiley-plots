@@ -1,13 +1,17 @@
 # Introduction {.unnumbered}
 
-## What are deamination patterns? {.unnumbered}
+## What are damage patterns? {.unnumbered}
 
-<!-- TODO: describe biochemsityr and cause -->
+Damage patterns on ancient DNA molecules occur due to increased miscoding lesions at the end of molecules. When DNA molecules start to decompose (i.e., repair mechanisms are lost once an organism dies), the very long DNA molecules start to fragment due to 'nicks' occurring on the sugar-phosphate of one of the strands, weakening the structure and causing the molecule to cleave into two. However, this cleavage is not necessarily 'clean', i.e., occurs on both strands at the same position. Rather, when the two uneven 'nicks' cause the DNA molecule to cleave into two, this results in  a 'jagged' break - with the molecules having 'overhangs' of one strand being longer than the other of each of the new two now-'independent' molecules.
+
+The resulting single-stranded overhangs leave the nitrogenous-bases 'exposed' on the overhang to the surrounding environment. It was found
+
+It is important to note that the library construction method will influence damage, e.g., is the library constructed from double-stranded DNA or single-stranded DNA, is the polymerase in the initial library amplification proof-reading or not, and so on.
 
 @fig-briggs-2007
 
 
-![First reported damage pattern from Neanderthal DNA [@Briggs2007-ao]. Reproduced here under free access.](assets/data/briggs_2007_original_Damage_pattern.jpeg){#fig-briggs-2007}
+![First reported misincorporation lesion 'smiley plot' from Neanderthal DNA [@Briggs2007-ao]. Reproduced here under free access.](assets/images/briggs_2007_original_Damage_pattern.jpeg){#fig-briggs-2007}
 
 ## How to generate damage patterns
 

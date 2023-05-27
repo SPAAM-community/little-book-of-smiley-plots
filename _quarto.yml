@@ -2,6 +2,9 @@ project:
   type: book
   output-dir: docs
 
+preview:
+  port: 4200
+
 book:
   title: "The Little Book of Smiley Plots"
   subtitle: "A collection of ancient DNA patterns and their causes"
