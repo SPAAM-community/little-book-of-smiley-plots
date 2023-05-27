@@ -1,5 +1,13 @@
 # Smiley Plot of Double Stranded DNA Libraries
 
+> Start PLACEHOLDER!
+
+<a title="snah Kritzler, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Salvador_dali_als_Auge.jpg"><img width="512" alt="Salvador dali als Auge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg"></a>
+
+_snah Kritzler, CC0, via Wikimedia Commons_
+
+> End PLACEHOLDER!
+
 <!-- TODO Finish other end -->
 
 ```{r}
@@ -14,7 +22,7 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 
-type_colours <- c("C>T" = "red", "G>A" = "blue", "A>C" = "grey", "A>G" = "grey", "A>T" = "grey", "C>A" = "grey", "C>G" = "grey", "G>C" = "grey", "G>T" = "grey", "T>A" = "grey", "T>C" = "grey",	"T>G" = "grey", "insertion" = "purple", "deletion" = "green")
+type_colours <- c("C>T" = "red", "G>A" = "blue", "A>C" = "grey", "A>G" = "grey", "A>T" = "grey", "C>A" = "grey", "C>G" = "grey", "G>C" = "grey", "G>T" = "grey", "T>A" = "grey", "T>C" = "grey",	"T>G" = "grey", "insertion" = "grey", "deletion" = "grey")
 
 raw_double_stranded <- readr::read_tsv("assets/data/double-stranded.txt", comment = "#")
 
@@ -33,4 +41,6 @@ ggplot(long_double_stranded, aes(x = Position, y = Frequency, colour = `Mutation
 
 This is the 'classical' ancient DNA plot that you will see most often. You expect to see a smooth curve from the beginning of the read (position 1) to a flat line in the middle (e.g. positions 10-25 in mapDamage plots).
 
-If you get such a plot in ancient DNA double-stranded libraries, this is a good indication you have authentic ancient DNA!
+If you get such a plot in ancient DNA double-stranded libraries, this is a good indication you have authentic ancient DNA! 
+
+

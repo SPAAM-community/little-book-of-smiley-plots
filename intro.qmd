@@ -4,6 +4,11 @@
 
 <!-- TODO: describe biochemsityr and cause -->
 
+@fig-briggs-2007
+
+
+![First reported damage pattern from Neanderthal DNA [@Briggs2007-ao]. Reproduced here under free access.](assets/data/briggs_2007_original_Damage_pattern.jpeg){#fig-briggs-2007}
+
 ## How to generate damage patterns
 
 There is a range of software that can generate damage pattern plots from ancient DNA NGS libraries. The vast majority of tools require to be of sequencing reads aligned to a reference genome. Here we make suggestions of some tools that you can use to generate such plots.

@@ -18,6 +18,7 @@ book:
       chapters:
         - insufficient-reads.qmd
     - references.qmd
+  page-footer: "With ❤️ from the SPAAM Community. CC-BY 4.0"
 
 bibliography: references.bib
 
