@@ -1,6 +1,10 @@
 image:
-  file: https://gitlab.com/quarto-forge/docker/-/raw/main/Dockerfile.quarto
-  
+  file: gitpod/workspace-full
+ 
+tasks:
+  name: Pull quarto image
+  init: |
+  docker pull https://gitlab.com/quarto-forge/docker/-/raw/main/Dockerfile.quarto
   
 vscode:
   extensions:
