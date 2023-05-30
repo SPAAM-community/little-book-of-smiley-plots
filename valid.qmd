@@ -1,0 +1,5 @@
+# Valid Smiley Plots
+
+This section of the litte book of smiley plots shows damage patterns as they _should_ be from a molecular biology point of view. 
+
+These are the ones that will immediately make _you_ smile as these give you good indications of valid ancient DNA in your sequencing library!

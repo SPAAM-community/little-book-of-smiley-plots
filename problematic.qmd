@@ -1,0 +1,5 @@
+# Invalid Smiley Plots
+
+This section of the litte book of smiley plots shows all the weird and wonderful _strange_ smiley plots that represent problems or artefacts in the sequencing libraries which will make you bemused... 
+
+The descriptions hopefully will provide guidance on how to intepret and remedy such problems.

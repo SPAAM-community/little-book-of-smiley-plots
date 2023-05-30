@@ -28,4 +28,10 @@ _CARICATURE PLOT GOES HERE_
 
 :::
 
-_SMILEY PLOT CAPTION GOES HERE_
+This is an increasingly common ancient DNA plot that is becoming more common as single-stranded library construction protocols become more popular. 
+You expect to see a smooth curve from the beginning of the read (position 1) to a flat line in the middle (e.g. positions 10-25 in mapDamage plots). 
+As with double-stranded ancient DNA libraries, the 5' end will have the expect original C to T deamination curve. 
+In contrast to the double stranded protcol, the 3' of the molecule will _also_ show the complementary C to T curve. 
+You see deamination the C to T at both ends of the the molecule, as during typical double-stranded library construction protcols [@Meyer2010-qc] only _one_ end of the single-ended overhangs of a DNA molecule is repaired by being 'filled in' (where the mis-reading of the deaminated C occurs). Overhands at the other end of the molecule (which may also hold cytosine demination) are blunt ended by being trimmed off. The highest frequency point of the curve can vary from 1% to 50% depending on the age and preservation of the sample.
+
+If you get such a plot with smooth lines from ancient DNA double-stranded libraries, this is a good indication you have authentic ancient DNA!

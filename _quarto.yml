@@ -9,17 +9,25 @@ book:
   subtitle: "A collection of ancient DNA patterns and their causes"
   author: "The SPAAM Community"
   date: "25/05/2023"
+  license: "CC-BY 4.0"
+  page-navigation: true
+  downloads: [pdf, epub]
+  site-url: https://spaam-community.github.io/little-book-of-smiley-plots
+  reader-mode: true
   chapters:
     - index.qmd
     - intro.qmd
-    - part: "Valid Smiley Plots"
+    - part: valid.qmd
       chapters:
         - double-stranded.qmd
         - single-stranded.qmd
         - partial-udg.qmd
-    - part: "Problematic Smiley Plots"
+    - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd
+    - part: most-wanted.qmd
+      chapters: 
+        - placeholder.qmd
     - references.qmd
   page-footer: "With ❤️ from the SPAAM Community. CC-BY 4.0"
 
@@ -27,6 +35,8 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: cyborg
   # pdf:
   #   documentclass: scrreprt

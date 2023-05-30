@@ -1,0 +1,7 @@
+# Most Wanted
+
+These pages hold 'reported' types of smiley plots but are as of yet unclassified
+- i.e., no one has a good explanation as to what is causing it.
+
+If you happen to know, please report your explanation at
+[https://github.com/SPAAM-community/little-book-of-smiley-plots](https://github.com/SPAAM-community/little-book-of-smiley-plots).
