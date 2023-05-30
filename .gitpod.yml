@@ -1,7 +1,8 @@
-
+image:
+  file: https://gitlab.com/quarto-forge/docker/-/raw/main/Dockerfile.quarto
+  
+  
 vscode:
   extensions:
     - quarto.quarto
 
-image:
-  file: https://gitlab.com/quarto-forge/docker/-/raw/main/Dockerfile.quarto
