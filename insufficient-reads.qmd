@@ -1,9 +1,11 @@
-# Smiley Plot of insufficient reads
+# Insufficient reads
 
 
-::: {layout-ncol=2}
+<!-- ![_CAPTION GOES HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 
-<div>
+_CARICATURE PLOT GOES HERE_
+
+
 _R/CODE IMAGE GOES HERE_
 ```{r}
 #| label: fig-title-goes-here
@@ -15,17 +17,5 @@ _R/CODE IMAGE GOES HERE_
 ## R code goes here
 
 ```
-
-</div>
-
-<div>
-
-<!-- ![_CAPTION GOES HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
-
-_CARICATURE PLOT GOES HERE_
-
-</div>
-
-:::
 
 _SMILEY PLOT CAPTION GOES HERE_

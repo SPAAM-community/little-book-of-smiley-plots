@@ -1,15 +1,14 @@
-# Smiley Plot of Single Stranded DNA Libraries
+# Single stranded DNA Libraries
 
 
-::: {layout-ncol=2}
+<!-- ![_CAPTION GOES HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 
-<div>
+_CARICATURE PLOT GOES HERE_
 
-<!-- TODO Problem: missing 0 position, should be 30% -->
 
 ```{r}
 #| label: fig-single-stranded-smiley
-#| fig-cap: Example of a smiley plot of a double stranded DNA library. Data taken from [@Andrades_Valtuena2022-tq]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| fig-cap: Example of a smiley plot of a double stranded DNA library. Data taken from library VEL003.B0101 of [@Andrades_Valtuena2022-tq]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
 #| echo: false
 #| warning: false
 #| error: false
@@ -19,74 +18,29 @@ library(tidyr)
 library(dplyr)
 library(ggplot2)
 library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
 
-type_colours <- c("C>T" = "red", "G>A" = "blue", "A>C" = "grey", "A>G" = "grey", "A>T" = "grey", "C>A" = "grey", "C>G" = "grey", "G>C" = "grey", "G>T" = "grey", "T>A" = "grey", "T>C" = "grey", "T>G" = "grey", "insertion" = "grey", "deletion" = "grey")
+raw_5p <- readr::read_tsv("assets/data/single-stranded/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/single-stranded/3p_freq_misincorporations.txt", comment = "#")
 
-raw_5p_single_stranded <- readr::read_tsv("assets/data/single-stranded/5p_freq_misincorporations.txt", comment = "#")
-raw_3p_single_stranded <- readr::read_tsv("assets/data/single-stranded/3p_freq_misincorporations.txt", comment = "#")
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
 
-pivot_longer_freqmisincorporation <- function(x, reverse, type_colours) {
-    result <- x %>%
-        dplyr::rename(insertion = `->ACGT`, deletion = `ACGT>-`, Position = Pos) %>%
-        tidyr::pivot_longer(tidyr::contains(c(">", "insertion", "deletion")), names_to = "Mutation Type", values_to = "Frequency") %>%
-        dplyr::mutate(`Mutation Type` = factor(`Mutation Type`, levels = rev(names(type_colours))))
-
-    if (reverse) {
-        result <- result %>%
-            dplyr::mutate(Position = Position * -1)
-    }
-
-    result
-}
-
-plot_longer_freqmisincorporation <- function(x, reverse, type_colours) {
-    result <- ggplot2::ggplot(x, aes(x = Position, y = Frequency, colour = `Mutation Type`)) +
-        ggplot2::geom_line() +
-        ggplot2::scale_colour_manual(values = type_colours, guide = ggplot2::guide_legend(reverse = TRUE)) +
-        ggplot2::facet_wrap(~end, ncol = 2) +
-        ggplot2::theme_minimal() +
-        ggplot2::theme(legend.position = "none")
-
-    if (reverse) {
-        result <- result +
-            ggplot2::scale_x_continuous(breaks = seq(0, -14, -1)) +
-            ggplot2::scale_y_continuous(breaks = seq(0, 0.30, 0.05), position = "right", limits = c(0, 0.30))
-    } else {
-        result <- result +
-            ggplot2::scale_x_continuous(breaks = seq(0, 14, 1)) +
-            ggplot2::scale_y_continuous(breaks = seq(0, 0.30, 0.05), limits = c(0, 0.30))
-    }
-
-    result
-}
-
-long_5p_single_stranded <- pivot_longer_freqmisincorporation(raw_5p_single_stranded, reverse = FALSE, type_colours = type_colours) %>% mutate(end = "5p")
-long_3p_single_stranded <- pivot_longer_freqmisincorporation(raw_3p_single_stranded, reverse = TRUE, type_colours = type_colours) %>% mutate(end = "3p")
-
-smiley_5p_single_stranded <- plot_longer_freqmisincorporation(long_5p_single_stranded, reverse = FALSE, type_colours)
-smiley_3p_single_stranded <- plot_longer_freqmisincorporation(long_3p_single_stranded, reverse = TRUE, type_colours)
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
 
 
-smiley_5p_single_stranded + smiley_3p_single_stranded
+smiley_5p + smiley_3p
 
 ```
 
-</div>
 
-<div>
-
-<!-- ![_CAPTION GOES HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
-
-_CARICATURE PLOT GOES HERE_
-
-</div>
-
-:::
-
-This is an increasingly common ancient DNA plot that is becoming more common as single-stranded library construction protocols become more popular. 
+This is an increasingly common ancient DNA plot that is you will see more often as single-stranded library construction protocols become more popular. 
 You expect to see a smooth curve from the beginning of the read (position 1) to a flat line in the middle (e.g. positions 10-25 in mapDamage plots). 
 As with double-stranded ancient DNA libraries, the 5' end will have the expect original C to T deamination curve. 
-In contrast to the double stranded protcol, the 3' of the molecule will _also_ show the complementary C to T curve. 
-You see deamination the C to T at both ends of the the molecule, as during typical double-stranded library construction protcols [@Meyer2010-qc] only _one_ end of the single-ended overhangs of a DNA molecule is repaired by being 'filled in' (where the mis-reading of the deaminated C occurs). Overhands at the other end of the molecule (which may also hold cytosine demination) are blunt ended by being trimmed off. The highest frequency point of the curve can vary from 1% to 50% depending on the age and preservation of the sample.
+In contrast to the double stranded protocol, the 3' of the molecule will _also_ show the complementary C to T curve. 
+You see the C to T deamination at both ends of the the molecule in this case, as during typical single-stranded library construction protcols [e.g. @Gansauge2017-ge] the entire DNA molecule is denatured, immobilised and then the complementary strand reconstructed - i.e., without any filling in or blunt ending. The highest frequency point of the curve can vary from 1% to ???% depending on the age and preservation of the sample.
 
-If you get such a plot with smooth lines from ancient DNA double-stranded libraries, this is a good indication you have authentic ancient DNA!
+If you get such a plot with smooth lines from ancient DNA single-stranded libraries, this is a good indication you have authentic ancient DNA!

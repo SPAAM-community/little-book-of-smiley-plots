@@ -21,12 +21,13 @@ book:
       chapters:
         - double-stranded.qmd
         - single-stranded.qmd
-        - partial-udg.qmd
+        - partial-udg-double-stranded.qmd
+        - partial-udg-single-stranded.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd
     - part: most-wanted.qmd
-      chapters: 
+      chapters:
         - placeholder.qmd
     - references.qmd
   page-footer: "With ❤️ from the SPAAM Community. CC-BY 4.0"
@@ -38,5 +39,5 @@ format:
     theme:
       light: cosmo
       dark: cyborg
-  # pdf:
-  #   documentclass: scrreprt
+  pdf:
+    documentclass: scrreprt
