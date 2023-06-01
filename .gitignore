@@ -1,2 +1,3 @@
 /.quarto/
 *.deb
+.Rproj.user
