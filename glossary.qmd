@@ -1,0 +1,12 @@
+# Glossary
+
+```{r}
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary_table(as_kable = TRUE)
+```
+
+<!-- TO FIX not loading... -->
+
+Generated using the `glossary` R package [@glossary].
+ 

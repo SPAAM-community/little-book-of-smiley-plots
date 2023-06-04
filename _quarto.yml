@@ -26,9 +26,11 @@ book:
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd
+        - internal-barcodes.qmd
     - part: most-wanted.qmd
       chapters:
         - placeholder.qmd
+    - glossary.qmd
     - references.qmd
   page-footer: "With ❤️ from the SPAAM Community. CC-BY 4.0"
 

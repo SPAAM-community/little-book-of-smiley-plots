@@ -1,0 +1,2 @@
+internal barcode: |
+  A short sequence, normally 6-7bp artificial, added prior to adapter ligation to add an additional sample identifier during demultiplexing.

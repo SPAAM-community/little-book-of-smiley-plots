@@ -1,0 +1,33 @@
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
+
+# TEMPLATE
+
+![CARICATURE FILE GOES HERE WITH CREDITS. TEMPLATE EXAMPLE: snah Kritzler, CC0, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-template}
+
+
+```{r}
+#| label: fig-template
+#| fig-cap: Example of a smiley plot of a TEMPLATE. Data taken from library TEMPLATE of [@TEMPLATE]. Damage data generated using [TEMPLATE](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+## TEMPLATE CODE GOES HERE
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/TEMPLATE/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/TEMPLATE/3p_freq_misincorporations.txt", comment = "#")
+
+## TEMPLATE REMAINING CODE GOES HERE
+
+```
+
+<!-- TEMPLATE Description goes here -->
