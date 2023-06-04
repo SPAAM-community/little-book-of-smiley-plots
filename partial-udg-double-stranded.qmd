@@ -1,1 +1,41 @@
 # Partial UDG (double-stranded)
+
+![CARICATURE FILE GOES HERE WITH CREDITS. TEMPLATE EXAMPLE: snah Kritzler, CC0, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-template}
+
+
+```{r}
+#| label: fig-template
+#| fig-cap: Example of a smiley plot of a double-stranded 'partial UDG' or 'UDG half' smiley plot. Data taken from library VLI092.A0101 (ERR8958796) of [@Andrades_Valtuena2022-tq]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary::glossary_popup("hover")
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/partial-udg-double-stranded/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/partial-udg-double-stranded/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
+
+```
+
+The smiley plot presented here has been generated from a double-stranded 'partial UDG' or 'UDG-half' library. `r glossary('UDG')` or USER Treatment consists of enzymatically cleaving off ends of molecules when a uracil is present. Whereas complete-UDG UDG full runs the protocol long enough for all DNA molecules to be enzymatically modified, partial UDG stops early, meaning that a small number of reads retain uracils on the last base. This allows for simultaneous authentication of damage, but makes it easier to then _in silico_ remove damage by 'trimming' off one base from either end of each read, so you can ensure you do not incorporate damaged bases into downstream analyses.
+
+<!-- TODO complete dDescription  -->

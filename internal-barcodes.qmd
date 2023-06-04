@@ -4,7 +4,7 @@
 
 ```{r}
 #| label: fig-internal-barcodes
-#| fig-cap: Example of a smiley plot of a double stranded library with barcodes that were not removed prior mapping. Data taken from library GEN72 of [@Andrades_Valtuena2017-qr]. Damage data generated using [DamagePRofiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| fig-cap: Example of a smiley plot of a double stranded library with barcodes that were not removed prior mapping. Data taken from library GEN72 (ERR2112579) of [@Andrades_Valtuena2017-qr]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
 #| echo: false
 #| warning: false
 #| error: false
