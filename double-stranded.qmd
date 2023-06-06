@@ -1,8 +1,6 @@
 # Double stranded DNA libraries
 
-> Start PLACEHOLDER!
-
-![!!EXAMPLE NOT FINAL!! snah Kritzler, CC0, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature}
+![Archibald by Tessa Zeibig](/assets/images/double-stranded/bearddude_cropped.png){#fig-double-stranded-caricature}
 
 
 ```{r}

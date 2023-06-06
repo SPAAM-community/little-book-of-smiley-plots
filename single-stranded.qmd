@@ -1,7 +1,7 @@
 # Single stranded DNA Libraries
 
 
-<!-- ![_CAPTION GOES HERE](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 
 _CARICATURE PLOT GOES HERE_
 

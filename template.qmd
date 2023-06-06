@@ -2,7 +2,7 @@
 
 # TEMPLATE
 
-![CARICATURE FILE GOES HERE WITH CREDITS. TEMPLATE EXAMPLE: snah Kritzler, CC0, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Salvador_dali_als_Auge.jpg/512px-Salvador_dali_als_Auge.jpg){#fig-template}
+![CARICATURE FILE GOES HERE WITH CREDITS. TEMPLATE EXAMPLE: snah Kritzler, CC0, via Wikimedia Commons](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-template}
 
 
 ```{r}
