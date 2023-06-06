@@ -1,6 +1,6 @@
 # Double stranded DNA libraries
 
-![Archibald by Tessa Zeibig](/assets/images/double-stranded/bearddude_cropped.png){#fig-double-stranded-caricature}
+![Archibald by Tessa Zeibig](/assets/images/double-stranded/bearddude_cropped.png){#fig-double-stranded-caricature}{width=75%}
 
 
 ```{r}
