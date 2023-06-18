@@ -2,7 +2,6 @@
 
 ![Archibald by Tessa Zeibig](/assets/images/double-stranded/bearddude_cropped.png){#fig-double-stranded-caricature}{width=75%}
 
-
 ```{r}
 #| label: fig-double-stranded-smiley
 #| fig-cap: Example of a smiley plot of a double stranded DNA library. Data taken from library COD076E1bL1 (ERR1943600-ERR1943602) of [@Star2017-cj]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].

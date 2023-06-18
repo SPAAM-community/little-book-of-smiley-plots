@@ -6,16 +6,41 @@
 _CARICATURE PLOT GOES HERE_
 
 
-_R/CODE IMAGE GOES HERE_
 ```{r}
-#| label: fig-title-goes-here
-#| fig-cap: _CAPTION GOES HERE_. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| label: fig-insufficient-reads
+#| fig-cap: Example of a smiley plot of an alignment with insufficient reads to generate a confident smiley plot. Data taken from a non-UDG library of a captured Woolly Mammoth mitochondrial genome (JK2782) from [@Fellows_Yates2017-rp], and sampled aligned reads down to 50 reads. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
 #| echo: false
 #| warning: false
 #| error: false
 
-## R code goes here
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary::glossary_popup("hover")
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/insufficient-reads/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/insufficient-reads/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
 
 ```
 
-_SMILEY PLOT CAPTION GOES HERE_
+When you get random spikey lines in both 5p and 3p ends of the smiley plot, this more often than not indicates that insufficient reads are present to generate the damage profile. Given the plots are based on frequency, sufficient numbers of reads are needed to visualise the 'fraction' of C to T misincorporations versus the reference, if there are too few reads, this produces 'noise' in the line.
+
+In this case of the example above, the aligned DNA _does_ have a true damage signal (as indicated by the high frequency of the C-T misincorporations on the 0 and 1 positions of the 5p plot) so _may_ give you a teeny-weeny hint of the presence of true ancient DNA. However the rest of line and also the 3p show random spikes making it very difficult to make any firm conclusion.
+
+When you receive a plot like this, you normally need to increase the number of reads in your alignment against the reference genome (deeper sequencing, relaxing alignment parameters), or possibly you have the wrong reference genome (meaning it is not similar enough to align the reads in your library against it).

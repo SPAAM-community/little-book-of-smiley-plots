@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -254,10 +273,29 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 <p><em>CARICATURE PLOT GOES HERE</em></p>
-<p><em>R/CODE IMAGE GOES HERE</em></p>
-<p><em>SMILEY PLOT CAPTION GOES HERE</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-insufficient-reads" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="insufficient-reads_files/figure-html/fig-insufficient-reads-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;5.1: Example of a smiley plot of an alignment with insufficient reads to generate a confident smiley plot. Data taken from a non-UDG library of a captured Woolly Mammoth mitochondrial genome (JK2782) from <span class="citation" data-cites="Fellows_Yates2017-rp">(<a href="references.html#ref-Fellows_Yates2017-rp" role="doc-biblioref">Fellows Yates et al. 2017</a>)</span>, and sampled aligned reads down to 50 reads. Damage data generated using <a href="./intro.html">DamageProfiler</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>When you get random spikey lines in both 5p and 3p ends of the smiley plot, this more often than not indicates that insufficient reads are present to generate the damage profile. Given the plots are based on frequency, sufficient numbers of reads are needed to visualise the ‘fraction’ of C to T misincorporations versus the reference, if there are too few reads, this produces ‘noise’ in the line.</p>
+<p>In this case of the example above, the aligned DNA <em>does</em> have a true damage signal (as indicated by the high frequency of the C-T misincorporations on the 0 and 1 positions of the 5p plot) so <em>may</em> give you a teeny-weeny hint of the presence of true ancient DNA. However the rest of line and also the 3p show random spikes making it very difficult to make any firm conclusion.</p>
+<p>When you receive a plot like this, you normally need to increase the number of reads in your alignment against the reference genome (deeper sequencing, relaxing alignment parameters), or possibly you have the wrong reference genome (meaning it is not similar enough to align the reads in your library against it).</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Fellows_Yates2017-rp" class="csl-entry" role="listitem">
+Fellows Yates, James A, Dorothée G Drucker, Ella Reiter, Simon Heumos, Frido Welker, Susanne C Münzel, Piotr Wojtal, et al. 2017. <span>“Central European Woolly Mammoth Population Dynamics: Insights from Late Pleistocene Mitochondrial Genomes.”</span> <em>Scientific Reports</em> 7 (1): 17714. <a href="https://doi.org/10.1038/s41598-017-17723-1">https://doi.org/10.1038/s41598-017-17723-1</a>.
+</div>
+<div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
