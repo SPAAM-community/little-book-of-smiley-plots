@@ -1,6 +1,8 @@
 # Internal barcodes not removed 
 
-![CARICATURE FILE GOES HERE WITH CREDITS. TEMPLATE EXAMPLE: snah Kritzler, CC0, via Wikimedia Commons](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-template}
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
 
 ```{r}
 #| label: fig-internal-barcodes
@@ -8,12 +10,6 @@
 #| echo: false
 #| warning: false
 #| error: false
-
-## TEMPLATE CODE GOES HERE
-
-library(glossary)
-glossary::glossary_path("glossary.yml")
-glossary::glossary_popup("hover")
 
 library(readr)
 library(tidyr)
@@ -37,11 +33,7 @@ smiley_5p + smiley_3p
 ```
 
 
-In this case, this smiley plot is not very smiley as the mapped reads have not had `r glossary('internal barcode')` removed prior mapping. As a side effect, you see a very spiky initial 'curve', and then the rest of the read being flat.
+In this case, this smiley plot is not very smiley as the mapped reads have not had 'internal barcode' removed prior mapping. As a side effect, you see a very spiky initial 'curve', and then the rest of the read being flat.
 
 In this case, this library only has a single barcode on the 5p end, but some labs may add internal barcodes to both ends of molecules.
 
-
-```{r}
-glossary::glossary_table()
-```

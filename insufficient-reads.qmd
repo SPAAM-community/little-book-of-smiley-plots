@@ -1,9 +1,7 @@
 # Insufficient reads
 
 
-<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
-
-_CARICATURE PLOT GOES HERE_
+![Egbert by James A. Fellows Yates](/assets/images/insufficient-reads/egbert.png){#fig-insufficient-reads-caricature width=35%}
 
 
 ```{r}

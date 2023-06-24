@@ -16,21 +16,22 @@ book:
   reader-mode: true
   chapters:
     - index.qmd
+    - contributors.qmd
     - intro.qmd
     - part: valid.qmd
       chapters:
         - double-stranded.qmd
         - single-stranded.qmd
         - partial-udg-double-stranded.qmd
-        - partial-udg-single-stranded.qmd
+        #- partial-udg-single-stranded.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd
         - internal-barcodes.qmd
-    - part: most-wanted.qmd
-      chapters:
-        - placeholder.qmd
-    - glossary.qmd
+    #- part: most-wanted.qmd
+    #  chapters:
+    #    - placeholder.qmd
+    #- glossary.qmd
     - references.qmd
   page-footer: "With ❤️ from the SPAAM Community. CC-BY 4.0"
 

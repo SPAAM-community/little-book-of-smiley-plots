@@ -1,6 +1,8 @@
 # Partial UDG (double-stranded)
 
-![CARICATURE FILE GOES HERE WITH CREDITS. TEMPLATE EXAMPLE: snah Kritzler, CC0, via Wikimedia Commons](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-template}
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
 
 
 ```{r}
