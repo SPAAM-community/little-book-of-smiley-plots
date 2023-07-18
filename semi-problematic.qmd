@@ -1,0 +1,5 @@
+# Half Valid Smiley Plots
+
+This section of the little book of smiley plots shows all the slightly odd damage profiles that don't look as expected, but still retain enough of a pattern that you can take as a positive indicator of ancient DNA.
+
+The descriptions hopefully will provide guidance on how to interpret and when to maybe consider re-doing libraries or mapping.
