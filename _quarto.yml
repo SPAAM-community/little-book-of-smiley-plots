@@ -24,6 +24,9 @@ book:
         - single-stranded.qmd
         - partial-udg-double-stranded.qmd
         #- partial-udg-single-stranded.qmd
+    - part: semi-problematic.qmd
+      chapters:
+        - proofreading-polymerase.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd

@@ -1,0 +1,50 @@
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
+
+# Proofreading enzymes
+
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+```{r}
+#| label: fig-template
+#| fig-cap: Example of a smiley plot of a double stranded library amplified after adapter ligation with a proofreading NEBNext Ultra II Q5 Master polymerase. Data taken from library HH06D of [@Cai2022-rp]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/proofreading-polymerase/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/proofreading-polymerase/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
+
+```
+
+Sometimes the type of polymerase you use during library construction will influence the type of damage pattern you will receive.
+
+In the example above, @Cai2022-rp found a funny smiley plot, where while the 3' G to A patterns look like a classic non-UDG (i.e. non-USER treated, thus retaining damage) plot, the frequency of C to T on the 5' end was extremely reduced.
+
+They identified the problem as the choice of polymerase. The Q5 polymerase is a 'high fidelity' enzyme, which corresponds to being a 'proofreading' enzyme. This means that when the enzyme hits an incorrect nucleotide (such as a deaminated cytosine), it will instead remove the nucleotide on it's 3' to 5' exonuclease activity.
+
+While having a low error rate is great for modern genomics, this can be less optimal for preserving ancient DNA damage for profiling later on.
+
+In the case of this particular enzyme, it is maybe not so much of a problem as you retain the damage signal on the 3' for proving authenticity. However this may be problematic for downstream aDNA validation tools that may have an expected 'model' of ancient DNA damage. 
+
+:::{.callout-tip}
+The choice of enzyme only matters during the first amplification after adapter ligation. At subsequent amplifications, the (misincorporated) thymines have already been integrated into the template molecules, so it doesn't matter which enzyme you use.
+::: 
