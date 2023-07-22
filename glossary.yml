@@ -1,4 +1,6 @@
 internal barcode: |
-  A short sequence, normally 6-7bp artificial, added prior to adapter ligation to add an additional sample identifier during demultiplexing.
+  A short synthetic DNA sequence, normally 6-7bp artificial, added prior to adapter ligation to add an additional sample identifier during demultiplexing.
 UDG: |
   Uracil-DNA glycosylase
+indices: |
+  A short synthetic DNA sequence added after adaptor ligation to act as a unique sample identifier to allow sequencing multiple samples on one lane or run of a sequencing platform. These are separated out bioinformatically with a process called demultiplexing.

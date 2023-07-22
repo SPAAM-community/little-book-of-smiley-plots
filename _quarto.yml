@@ -27,6 +27,7 @@ book:
     - part: semi-problematic.qmd
       chapters:
         - proofreading-polymerase.qmd
+        - barcode-ligation-bias.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd

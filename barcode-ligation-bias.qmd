@@ -1,0 +1,47 @@
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
+
+# Internal Barcode Ligation Bias
+
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+```{r}
+#| label: fig-udg-double-stranded
+#| fig-cap: Example of a smiley plot of an internal barcoded double-stranded library with a ligation bias of certain barcodes. Data taken from sample Ua9 (ERS4545914) of [@Brealey2020-mu]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary::glossary_popup("hover")
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/barcode-ligation-bias/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/barcode-ligation-bias/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
+
+```
+
+In this smiley plot, you see slightly spiky ends of the damage curves; mainly that some of the last couple of bases are often lower than expected from the rest of the otherwise classical damage curve of a constant decrease. This was observed in @Brealey2020-mu, who associated this to the explanation of reduced ligation efficiency to DNA molecules of `r glossary('internal barcode')` with a terminal G or C (i.e., short synthetic oligos with known sequences added directly prior addition of library adapters and `r glossary('indices')`) as suggested by @Rohland2015-xn. 
+
+In other words, certain internal barcode sequences with a terminal G or C do not ligate as as well to an ancient DNA molecule with a deaminated C on the terminus, and thus those read will be lost during the second round of demultiplexing as it will not contain the barcode associated with that library.
+
+Ultimately you should not be too worried about this plot if you get it - you probably still have aligned true aDNA reads, however you may have lost a small fraction of true ancient DNA reads in that particular library. If you wish to ensure you have retained as many aDNA reads as possible, you should re-build the library from an extract but with different internal barcodes without a terminal G or C.
+

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Little Book of Smiley Plots - 2&nbsp; Single stranded DNA Libraries</title>
+<title>The Little Book of Smiley Plots - 5&nbsp; Internal Barcode Ligation Bias</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./partial-udg-double-stranded.html" rel="next">
-<link href="./double-stranded.html" rel="prev">
+<link href="./problematic.html" rel="next">
+<link href="./proofreading-polymerase.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -94,7 +94,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./valid.html">Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./single-stranded.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Single stranded DNA Libraries</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./semi-problematic.html">Half Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./barcode-ligation-bias.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Internal Barcode Ligation Bias</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -179,7 +179,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./single-stranded.html" class="sidebar-item-text sidebar-link active">
+  <a href="./single-stranded.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Single stranded DNA Libraries</span></span></a>
   </div>
 </li>
@@ -208,7 +208,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./barcode-ligation-bias.html" class="sidebar-item-text sidebar-link">
+  <a href="./barcode-ligation-bias.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Internal Barcode Ligation Bias</span></span></a>
   </div>
 </li>
@@ -256,7 +256,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Single stranded DNA Libraries</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Internal Barcode Ligation Bias</span></h1>
 </div>
 
 
@@ -271,28 +271,30 @@ div.csl-indent {
 
 </header>
 
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
 <!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 <p><em>CARICATURE PLOT GOES HERE</em></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-single-stranded-smiley" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-udg-double-stranded" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="single-stranded_files/figure-html/fig-single-stranded-smiley-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;2.1: Example of a smiley plot of a double stranded DNA library. Data taken from library VEL003.B0101 of <span class="citation" data-cites="Andrades_Valtuena2022-tq">(<a href="references.html#ref-Andrades_Valtuena2022-tq" role="doc-biblioref">Andrades Valtueña et al. 2022</a>)</span>. Damage data generated using <a href="./intro.html">DamageProfiler</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</figcaption>
+<p><img src="barcode-ligation-bias_files/figure-html/fig-udg-double-stranded-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;5.1: Example of a smiley plot of an internal barcoded double-stranded library with a ligation bias of certain barcodes. Data taken from sample Ua9 (ERS4545914) of <span class="citation" data-cites="Brealey2020-mu">(<a href="references.html#ref-Brealey2020-mu" role="doc-biblioref">Brealey et al. 2020</a>)</span>. Damage data generated using <a href="./intro.html">DamageProfiler</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>This is an increasingly common ancient DNA plot that is you will see more often as single-stranded library construction protocols become more popular. You expect to see a smooth curve from the beginning of the read (position 1) to a flat line in the middle (e.g.&nbsp;positions 10-25 in mapDamage plots). As with double-stranded ancient DNA libraries, the 5’ end will have the expect original C to T deamination curve. In contrast to the double stranded protocol, the 3’ of the molecule will <em>also</em> show the complementary C to T curve. You see the C to T deamination at both ends of the the molecule in this case, as during typical single-stranded library construction protcols <span class="citation" data-cites="Gansauge2017-ge">(e.g. <a href="references.html#ref-Gansauge2017-ge" role="doc-biblioref">Gansauge et al. 2017</a>)</span> the entire DNA molecule is denatured, immobilised and then the complementary strand reconstructed - i.e., without any filling in or blunt ending. The highest frequency point of the curve can vary from 1% to ???% depending on the age and preservation of the sample.</p>
-<p>If you get such a plot with smooth lines from ancient DNA single-stranded libraries, this is a good indication you have authentic ancient DNA!</p>
+<p>In this smiley plot, you see slightly spiky ends of the damage curves; mainly that some of the last couple of bases are often lower than expected from the rest of the otherwise classical damage curve of a constant decrease. This was observed in <span class="citation" data-cites="Brealey2020-mu">Brealey et al. (<a href="references.html#ref-Brealey2020-mu" role="doc-biblioref">2020</a>)</span>, who associated this to the explanation of reduced ligation efficiency to DNA molecules of <a class="glossary" title="A short synthetic DNA sequence, normally 6-7bp artificial, added prior to adapter ligation to add an additional sample identifier during demultiplexing.">internal barcode</a> with a terminal G or C (i.e., short synthetic oligos with known sequences added directly prior addition of library adapters and <a class="glossary" title="A short synthetic DNA sequence added after adaptor ligation to act as a unique sample identifier to allow sequencing multiple samples on one lane or run of a sequencing platform. These are separated out bioinformatically with a process called demultiplexing.">indices</a>) as suggested by <span class="citation" data-cites="Rohland2015-xn">Rohland et al. (<a href="references.html#ref-Rohland2015-xn" role="doc-biblioref">2015</a>)</span>.</p>
+<p>In other words, certain internal barcode sequences with a terminal G or C do not ligate as as well to an ancient DNA molecule with a deaminated C on the terminus, and thus those read will be lost during the second round of demultiplexing as it will not contain the barcode associated with that library.</p>
+<p>Ultimately you should not be too worried about this plot if you get it - you probably still have aligned true aDNA reads, however you may have lost a small fraction of true ancient DNA reads in that particular library. If you wish to ensure you have retained as many aDNA reads as possible, you should re-build the library from an extract but with different internal barcodes without a terminal G or C.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-Andrades_Valtuena2022-tq" class="csl-entry" role="listitem">
-Andrades Valtueña, Aida, Gunnar U Neumann, Maria A Spyrou, Lyazzat Musralina, Franziska Aron, Arman Beisenov, Andrey B Belinskiy, et al. 2022. <span>“Stone Age Yersinia Pestis Genomes Shed Light on the Early Evolution, Diversity, and Ecology of Plague.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 119 (17): e2116722119. <a href="https://doi.org/10.1073/pnas.2116722119">https://doi.org/10.1073/pnas.2116722119</a>.
+<div id="ref-Brealey2020-mu" class="csl-entry" role="listitem">
+Brealey, Jaelle C, Henrique G Leitão, Tom van der Valk, Wenbo Xu, Katia Bougiouri, Love Dalén, and Katerina Guschanski. 2020. <span>“Dental Calculus as a Tool to Study the Evolution of the Mammalian Oral Microbiome.”</span> <em>Molecular Biology and Evolution</em> 37 (10): 3003–22. <a href="https://doi.org/10.1093/molbev/msaa135">https://doi.org/10.1093/molbev/msaa135</a>.
 </div>
-<div id="ref-Gansauge2017-ge" class="csl-entry" role="listitem">
-Gansauge, Marie-Theres, Tobias Gerber, Isabelle Glocke, Petra Korlevic, Laurin Lippik, Sarah Nagel, Lara Maria Riehl, Anna Schmidt, and Matthias Meyer. 2017. <span>“Single-Stranded <span>DNA</span> Library Preparation from Highly Degraded <span>DNA</span> Using <span>T4</span> <span>DNA</span> Ligase.”</span> <em>Nucleic Acids Research</em> 45 (10): e79. <a href="https://doi.org/10.1093/nar/gkx033">https://doi.org/10.1093/nar/gkx033</a>.
+<div id="ref-Rohland2015-xn" class="csl-entry" role="listitem">
+Rohland, Nadin, Eadaoin Harney, Swapan Mallick, Susanne Nordenfelt, and David Reich. 2015. <span>“Partial Uracil-<span>DNA</span>-Glycosylase Treatment for Screening of Ancient <span>DNA</span>.”</span> <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 370 (1660): 20130624. <a href="https://doi.org/10.1098/rstb.2013.0624">https://doi.org/10.1098/rstb.2013.0624</a>.
 </div>
 <div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
 Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
@@ -650,13 +652,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./double-stranded.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Double stranded DNA libraries</span></span>
+      <a href="./proofreading-polymerase.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Proofreading enzymes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./partial-udg-double-stranded.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Partial UDG (double-stranded)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./problematic.html" class="pagination-link">
+        <span class="nav-page-text">Invalid Smiley Plots</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
