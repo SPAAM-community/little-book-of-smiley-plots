@@ -2,11 +2,11 @@
 
 The following people contributed [^1] either data, caricatures, or suggestions to the little book.
 
-- 🇩🇪 James Fellows Yates (\@jfy133, [https://jafy.eu](https://jafy.eu))
+- 🇩🇪 James A. Fellows Yates
 - 🇩🇪 Tessa Zeibig
 - 🇩🇪 Aida Andrades Valtueña
-- 🇸🇪 Pete Heintzman
+- 🇸🇪 Pete D. Heintzman
 - 🇬🇧 Katerina Guschanski
-- 🇳🇴 Jaelle Brealey
+- 🇳🇴 Jaelle C. Brealey
 
 [^1]: Flag represents institutional location at the time of contribution
