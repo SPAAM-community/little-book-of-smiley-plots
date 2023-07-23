@@ -7,11 +7,11 @@
     "text": "Preface\nA key part of any ancient DNA project is to show that the DNA is exactly that - that the DNA is ancient, rather than from modern contamination.\nA key authentication method is to show the presence of elevated C to T deamination patterns (and the complementary G to A) at the end of DNA molecules - known as damage patterns - originally reported by (Briggs et al. 2007).\nThese patterns can be plotted in what have been colloquially known as ’Smiley Plots. However, there can be a wide range of smiley plots, some which show valid ancient DNA, and others that do not - either due to not actually having true ancient DNA but also from laboratory and/or bioinformatic artifacts.\nThis book aims to act as a reference guide to interpreting ancient DNA damage plots, providing a wide range of example ‘smiley plots’, with descriptions of what the describe and what can cause them. As an added bit of fun, each type of ‘smiley plot’ comes with a artistic interpretation of the line shape contributed by members of the ancient DNA community.\n\n\n\n\nBriggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green, Janet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. “Patterns of Damage in Genomic DNA Sequences from a Neandertal.” Proceedings of the National Academy of Sciences of the United States of America 104 (37): 14616–21. https://doi.org/10.1073/pnas.0704665104."
   },
   {
-    "objectID": "contributors.html",
-    "href": "contributors.html",
+    "objectID": "contributors.html#footnotes",
+    "href": "contributors.html#footnotes",
     "title": "Contributors",
     "section": "",
-    "text": "James Fellows Yates (@jfy133, https://jafy.eu)\nTessa Zeibig"
+    "text": "Flag represents institutional location at the time of contribution↩︎"
   },
   {
     "objectID": "intro.html#what-are-damage-patterns",
