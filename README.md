@@ -18,7 +18,7 @@ To add a new plot:
 We want to give the artists of caricatures as much stylistic and creative freedom as possible. The four specifications for the caricatures are:
 
 1. They must be a caricature of a face (neither species, nor realism are important - but in most cases do not images of living people)
-2. Must incorporate a damage profiles into it (of those that do not have one in the book already)
+2. Must incorporate a damage profiles into it (of those that do not have one in the book already - please assign/leave a comment on the respective [GitHub issue](https://github.com/SPAAM-community/little-book-of-smiley-plots/issues)!)
 3. Other than gray scale (black, white, shades of grey), can only use three colours: red, blue, and one additional your choice
 4. Must not violate the [SPAAM code of conduct](https://spaam-community.org/code-of-conduct/)(i.e, not contain sexist, racise, homophobic illegal, defamatory, rude, imagery etc.)
 
