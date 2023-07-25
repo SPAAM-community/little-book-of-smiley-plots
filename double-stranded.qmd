@@ -1,6 +1,6 @@
 # Double stranded DNA libraries
 
-![Archibald by Tessa Zeibig](/assets/images/double-stranded/archibald.png){#fig-double-stranded-caricature width=75%}
+![Archibald by Tessa Zeibig](/assets/images/double-stranded/archibald.png){#fig-double-stranded-caricature height=400px}
 
 ```{r}
 #| label: fig-double-stranded-smiley
