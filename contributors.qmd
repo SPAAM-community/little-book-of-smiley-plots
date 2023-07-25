@@ -8,5 +8,6 @@ The following people contributed [^1] either data, caricatures, or suggestions t
 - 🇸🇪 Pete D. Heintzman
 - 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇸🇪 Katerina Guschanski
 - 🇳🇴 Jaelle C. Brealey
+- 🇮🇱 Nihan D. Dagtas
 
 [^1]: Flag represents institutional location at the time of contribution
