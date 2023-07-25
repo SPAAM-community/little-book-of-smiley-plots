@@ -1,7 +1,7 @@
 # Insufficient reads
 
 
-![Egbert by James A. Fellows Yates](/assets/images/insufficient-reads/egbert.png){#fig-insufficient-reads-caricature width=35%}
+![Egbert by James A. Fellows Yates](/assets/images/insufficient-reads/egbert.png){#fig-insufficient-reads-caricature height=400px}
 
 
 ```{r}
