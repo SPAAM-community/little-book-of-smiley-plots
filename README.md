@@ -13,7 +13,7 @@ To add a new plot:
 5. caricature image should go in `assets/images/` in a folder also with the same name as the `.qmd`, but with the file name the 'name' of the caricature.
 6. bibtex citations should go in `references.bib`
 
-## Artisitic guidelines
+## Artistic guidelines
 
 We want to give the artists of caricatures as much stylistic and creative freedom as possible. The four specifications for the caricatures are:
 
