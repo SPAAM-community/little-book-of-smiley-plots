@@ -1,0 +1,29 @@
+#dsDNA PE library wo UDG-treatment, merged reads mapped to draft assembly reference
+
+
+```{r}
+#| label: merged reads mapped to draft assembly reference
+#| fig-cap: Example of a smiley plot of merged reads from a PE dsDNA library mapped to a draft assembly as reference.
+#| echo: false
+#| warning: false
+#| error: false
+
+## TEMPLATE CODE GOES HERE
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/draft-reference-only-merged/5pCtoT_freq.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/draft-reference-only-merged/3pGtoA_freq.txt", comment = "#")
+
+## TEMPLATE REMAINING CODE GOES HERE
+
+```
+
+<!-- TEMPLATE Description goes here -->
