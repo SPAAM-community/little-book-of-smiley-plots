@@ -26,4 +26,4 @@ raw_3p <- readr::read_tsv("assets/data/draft-reference-only-merged/3pGtoA_freq.t
 
 ```
 
-<!-- TEMPLATE Description goes here -->
+The pattern observed in the DNA composition plot is a consequence of mapping the ancient reads against a draft genome comprised of multiple contigs. The nucleotide composition at the assessed coordinates is calculated for all the contigs in the reference assembly, which results in a data point at each position for every contig in the assembly. The line displayed in the plot connects the points that represent the mean/median nucleotide composition at each coordinate.
