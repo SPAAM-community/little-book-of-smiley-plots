@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="The SPAAM Community">
-<meta name="dcterms.date" content="2025-01-05">
 
-<title>The Little Book of Smiley Plots</title>
+<title>The Little Book of Smiley Plots - 4&nbsp; Mapping back to de novo assembled contigs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,7 +49,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./contributors.html" rel="next">
+<link href="./semi-problematic.html" rel="next">
+<link href="./partial-udg-double-stranded.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -95,7 +94,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./valid.html">Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./draft-reference-only-merged.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mapping back to _de novo_ assembled contigs</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,7 +146,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -192,8 +191,8 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./draft-reference-only-merged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">dsDNA PE library wo UDG-treatment, merged reads mapped to draft assembly reference</span></span></a>
+  <a href="./draft-reference-only-merged.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mapping back to <em>de novo</em> assembled contigs</span></span></a>
   </div>
 </li>
       </ul>
@@ -256,40 +255,21 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Little Book of Smiley Plots</h1>
-<p class="subtitle lead">A collection of ancient DNA patterns and their causes</p>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Mapping back to <em>de novo</em> assembled contigs</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>The SPAAM Community </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -297,20 +277,24 @@ div.csl-indent {
 
 </header>
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>A key part of any ancient DNA project is to show that the DNA is exactly that - that the DNA is ancient, rather than from modern contamination.</p>
-<p>A key authentication method is to show the presence of elevated C to T deamination patterns (and the complementary G to A) at the end of DNA molecules - known as damage patterns - originally reported by <span class="citation" data-cites="Briggs2007-ao">(<a href="references.html#ref-Briggs2007-ao" role="doc-biblioref">Briggs et al. 2007</a>)</span>.</p>
-<p>These patterns can be plotted in what have been colloquially known as ’Smiley Plots. However, there can be a wide range of smiley plots, some which show valid ancient DNA, and others that do not - either due to not actually having true ancient DNA but also from laboratory and/or bioinformatic artifacts.</p>
-<p>This book aims to act as a reference guide to interpreting ancient DNA damage plots, providing a wide range of example ‘smiley plots’, with descriptions of what the describe and what can cause them. As an added bit of fun, each type of ‘smiley plot’ comes with a artistic interpretation of the line shape contributed by members of the ancient DNA community.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="draft-reference-only-merged_files/figure-html/merged reads mapped to draft assembly reference-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Example of a smiley plot of merged reads (unpublished data) from a paired-end sequenced, non-UDG treated, double stranded DNA library mapped to a draft <em>de novo</em> assembly of said reads as reference. Generated with <a href="./intro.html">mapDamage2</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The pattern observed in the DNA composition plot is a consequence of mapping the ancient reads against a draft genome comprised of multiple contigs. The nucleotide composition at the assessed coordinates is calculated for all the contigs in the reference assembly, which results in a data point at each position for every contig in the assembly. The line displayed in the plot connects the points that represent the mean/median nucleotide composition at each coordinate.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-Briggs2007-ao" class="csl-entry" role="listitem">
-Briggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green, Janet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. <span>“Patterns of Damage in Genomic <span>DNA</span> Sequences from a Neandertal.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 104 (37): 14616–21. <a href="https://doi.org/10.1073/pnas.0704665104">https://doi.org/10.1073/pnas.0704665104</a>.
+<div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
 </div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -663,10 +647,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./partial-udg-double-stranded.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Partial UDG (double-stranded)</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./contributors.html" class="pagination-link">
-        <span class="nav-page-text">Contributors</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./semi-problematic.html" class="pagination-link">
+        <span class="nav-page-text">Half Valid Smiley Plots</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -1,9 +1,9 @@
-# dsDNA PE library wo UDG-treatment, merged reads mapped to draft assembly reference
+# Mapping back to _de novo_ assembled contigs
 
 
 ```{r}
 #| label: merged reads mapped to draft assembly reference
-#| fig-cap: Example of a smiley plot of merged reads (unpublished data) from a paired-end sequenced double stranded DNA library mapped to a draft _de novo_ assembly of said reads as reference. Generated with [mapDamage2](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot]
+#| fig-cap: Example of a smiley plot of merged reads (unpublished data) from a paired-end sequenced, non-UDG treated, double stranded DNA library mapped to a draft _de novo_ assembly of said reads as reference. Generated with [mapDamage2](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot]
 #| echo: false
 #| warning: false
 #| error: false
@@ -14,14 +14,14 @@ library(dplyr)
 library(ggplot2)
 library(patchwork)
 source("assets/src/R/style.r")
-source("assets/src/R/mapdamage.r")
-type_colours <- type_colours_dp
+source("assets/src/R/mapdamage2.r")
+type_colours <- type_colours_md
 
 raw_5p <- readr::read_tsv("assets/data/draft-reference-only-merged/5pCtoT_freq.txt", comment = "#")
 raw_3p <- readr::read_tsv("assets/data/draft-reference-only-merged/3pGtoA_freq.txt", comment = "#")
 
-long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
-long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+long_5p <- pivot_longer_pctotfreq(raw_5p, reverse = FALSE, type_colours)
+long_3p <- pivot_longer_pctotfreq(raw_3p, reverse = TRUE, type_colours)
 
 smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
 smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)

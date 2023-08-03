@@ -2,20 +2,22 @@
 ## Data manipulation ##
 #######################
 
-pivot_longer_freqmisincorporat <- function(x, reverse, type_colours) {
+## Position, Mutation Type, Frequency, end
+
+pivot_longer_pctotfreq <- function(x, reverse, type_colours) {
     result <- x %>%
         dplyr::rename(
-            insertion = `->ACGT`,
-            deletion = `ACGT>-`,
-            Position = Pos
+            Position = pos,
         ) %>%
-        tidyr::pivot_longer(tidyr::contains(c(">", "insertion", "deletion")),
+        tidyr::pivot_longer(tidyr::contains(c(">")),
             names_to = "Mutation Type",
             values_to = "Frequency"
         ) %>%
+        mutate(`Mutation Type` = gsub("(3|5)p", "", `Mutation Type`)) %>%
         dplyr::mutate(`Mutation Type` = factor(`Mutation Type`,
             levels = rev(names(type_colours))
-        ))
+        )) %>%
+        filter(Position <= 14)
 
     if (reverse) {
         result <- result %>%
