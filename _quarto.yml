@@ -23,7 +23,7 @@ book:
         - double-stranded.qmd
         - single-stranded.qmd
         - partial-udg-double-stranded.qmd
-        #- partial-udg-single-stranded.qmd
+        - partial-udg-single-stranded.qmd
     - part: semi-problematic.qmd
       chapters:
         - proofreading-polymerase.qmd

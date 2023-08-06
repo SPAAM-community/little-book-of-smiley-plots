@@ -9,5 +9,6 @@ The following people contributed [^1] either data, caricatures, or suggestions t
 - 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇸🇪 Katerina Guschanski
 - 🇳🇴 Jaelle C. Brealey
 - 🇮🇱 Nihan D. Dagtas
+- 🇩🇰 Zandra Fagernäs
 
 [^1]: Flag represents institutional location at the time of contribution

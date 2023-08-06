@@ -1,8 +1,7 @@
 # Partial UDG (single-stranded)
 
-<!-- ![_CAPTION GOES
-HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature}
--->
+![Prince Tjorven by Zandra Fagernäs](/assets/images/partial-udg-single-stranded/prince_tjorven.png){#fig-partial-udg-single-stranded-caricature height=400px}
+
 
 _CARICATURE PLOT GOES HERE_
 
