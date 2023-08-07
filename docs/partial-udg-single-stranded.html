@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -264,11 +283,24 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Figure&nbsp;4.1: Prince Tjorven by Zandra Fagernäs</figcaption>
 </figure>
 </div>
-<p><em>CARICATURE PLOT GOES HERE</em></p>
-<p><em>R/CODE IMAGE GOES HERE</em></p>
-<p><em>SMILEY PLOT CAPTION GOES HERE</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-partial-udg-single-stranded" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="partial-udg-single-stranded_files/figure-html/fig-partial-udg-single-stranded-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;4.2: Example of a smiley plot of a partial UDG treated single-stranded library, from unpublished data. Damage data generated using <a href="./intro.html">DamageProfiler</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>. <a href="./intro.html">DamageProfiler</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The smiley plot presented here has been generated from a single-stranded ‘partial UDG’ or ‘UDG-half’ library. UDG or USER Treatment consists of enzymatically cleaving off ends of molecules when a uracil is present. As with single-stranded non-UDG treated libraries, the C to T pattern is retained at <em>both</em> ends due to the lack of a blunt-ending (i.e.&nbsp;clipping off of 3’ overhangs) during the library preparation protocol. Furthermore, as with partial-UDG treated libraries, the USER treatment reaction is not run for the whole time, meaning damage on terminal bases are left. This allows for simultaneous authentication of damage, but makes it easier to then <em>in silico</em> remove damage by ‘trimming’ off one base from either end of each read, so you can ensure you do not incorporate damaged bases into downstream analyses.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

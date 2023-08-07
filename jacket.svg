@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="275mm"
+   height="175mm"
+   viewBox="0 0 275 175"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (1:1.3+202307231459+0e150ed6c4)"
+   sodipodi:docname="jacket.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="true"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.1331768"
+     inkscape:cx="601.84783"
+     inkscape:cy="337.10538"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#e50000"
+       empopacity="0.30196078"
+       color="#e50000"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="true"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:3.95746"
+       id="rect3"
+       width="125"
+       height="175"
+       x="150"
+       y="0" />
+    <rect
+       style="fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
+       id="rect4"
+       width="115"
+       height="164.99998"
+       x="155"
+       y="4.9999995" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:normal;font-family:'Albert Sans';-inkscape-font-specification:'Albert Sans';text-align:justify;text-decoration-color:#000000;letter-spacing:0.105833px;fill:#ffffff;stroke-width:3.96875"
+       x="159.85889"
+       y="15.319892"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Bagnard;-inkscape-font-specification:Bagnard;fill:#ffffff;stroke-width:3.96875"
+         x="159.85889"
+         y="15.319892">the little book of smiley plots</tspan></text>
+    <g
+       id="g5"
+       transform="translate(150)">
+      <path
+         class="cls-1"
+         d="m 110.77477,156.93412 a 0.79190353,0.79190353 0 1 0 0.7919,0.7919 0.79255638,0.79255638 0 0 0 -0.7919,-0.7919 z m 0,1.07002 a 0.27811286,0.27811286 0 1 1 0.27942,-0.27812 0.27811286,0.27811286 0 0 1 -0.27942,0.27812 z"
+         id="path1"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 111.43872,161.62744 a 0.79190353,0.79190353 0 1 0 0.79059,0.7919 0.79320923,0.79320923 0 0 0 -0.79059,-0.7919 z m 0,1.07001 a 0.27811286,0.27811286 0 1 1 0.27746,-0.27811 0.27811286,0.27811286 0 0 1 -0.27746,0.27811 z"
+         id="path2"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 109.77657,158.53686 a 0.79059784,0.79059784 0 0 0 -1.00147,-0.49355 c -0.65285,0.22262 -1.54007,0.83303 -1.88999,1.82275 -0.19586,0.55818 -0.20761,1.17512 -0.0294,1.82797 a 0.79255638,0.79255638 0 0 0 0.76187,0.58234 0.78929214,0.78929214 0 0 0 0.75992,-0.99429 c -0.33622,-1.23518 0.69854,-1.66867 0.90811,-1.74245 a 0.79190353,0.79190353 0 0 0 0.49094,-1.00277 z m -0.65873,0.51771 c -0.63652,0.22392 -1.61318,0.97405 -1.23453,2.36265 a 0.27484863,0.27484863 0 0 1 -0.0268,0.20891 0.27223724,0.27223724 0 0 1 -0.16647,0.13057 0.27550148,0.27550148 0 0 1 -0.33818,-0.19585 c -0.1495,-0.551 -0.14428,-1.06545 0.0176,-1.52244 v 0 c 0.28986,-0.8141 1.02693,-1.32006 1.5714,-1.50547 a 0.27571592,0.27571592 0 1 1 0.17692,0.52228 z"
+         id="path3"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 113.18051,159.58533 c -0.59866,-0.34274 -1.64321,-0.60453 -2.61726,-0.21283 -0.54905,0.22067 -1.01714,0.61956 -1.39057,1.18819 a 0.79125069,0.79125069 0 0 0 0.22458,1.09352 0.78929214,0.78929214 0 0 0 1.09352,-0.22458 c 0.70442,-1.06937 1.71373,-0.57908 1.90762,-0.47071 a 0.78951458,0.78951458 0 0 0 0.78342,-1.37098 z m -0.15342,0.82128 a 0.27811286,0.27811286 0 0 1 -0.37669,0.1025 c -0.58756,-0.32642 -1.79729,-0.56602 -2.58919,0.63587 a 0.26832016,0.26832016 0 0 1 -0.17366,0.11752 0.27484863,0.27484863 0 0 1 -0.28529,-0.42044 c 0.31467,-0.47723 0.70246,-0.81214 1.15293,-0.99298 a 2.2849648,2.2849648 0 0 1 0.85392,-0.15994 2.7419578,2.7419578 0 0 1 1.31549,0.34209 0.27550148,0.27550148 0 0 1 0.10249,0.37538 z"
+         id="path4"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <circle
+         cx="110.14021"
+         cy="160.1037"
+         r="4.8597941"
+         id="circle4"
+         style="stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 110.82569,156.67886 a 0.8565354,0.8565354 0 1 0 0.85589,0.85653 0.85718824,0.85718824 0 0 0 -0.85589,-0.85653 z m 0,1.15684 a 0.30030967,0.30030967 0 1 1 0.30031,-0.30031 0.30096251,0.30096251 0 0 1 -0.30031,0.30031 z"
+         id="path5"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 111.54252,161.75344 a 0.8565354,0.8565354 0 1 0 0.85653,0.85653 0.85718824,0.85718824 0 0 0 -0.85653,-0.85653 z m 0,1.15684 a 0.30030967,0.30030967 0 1 1 0.30096,-0.30031 0.30096251,0.30096251 0 0 1 -0.30096,0.30097 z"
+         id="path6"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 109.74849,158.41478 a 0.85457685,0.85457685 0 0 0 -1.08503,-0.53077 c -0.70638,0.24025 -1.66541,0.90093 -2.04406,1.97095 -0.21348,0.60323 -0.22393,1.26848 -0.0313,1.97617 a 0.85327116,0.85327116 0 0 0 1.04782,0.59931 0.85457685,0.85457685 0 0 0 0.59932,-1.04456 c -0.36429,-1.33507 0.75534,-1.80381 0.97927,-1.88346 a 0.85718824,0.85718824 0 0 0 0.53402,-1.08764 z m -0.71486,0.55688 c -0.6881,0.24286 -1.74376,1.05369 -1.33507,2.55524 a 0.29769828,0.29769828 0 0 1 -0.20892,0.36494 0.29835112,0.29835112 0 0 1 -0.36494,-0.20956 c -0.16256,-0.59932 -0.15668,-1.14967 0.0189,-1.64387 v 0 c 0.31206,-0.88265 1.10984,-1.42974 1.6974,-1.63212 a 0.3048796,0.3048796 0 0 1 0.096,-0.0157 0.29965682,0.29965682 0 0 1 0.13057,0.0307 0.29639258,0.29639258 0 0 1 0.15015,0.17104 0.29965682,0.29965682 0 0 1 -0.1841,0.37931 z"
+         id="path7"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+      <path
+         class="cls-1"
+         d="m 113.42664,159.54551 c -0.64763,-0.37082 -1.77705,-0.65285 -2.8301,-0.23046 -0.59409,0.23895 -1.10004,0.67048 -1.50154,1.2835 a 0.85457685,0.85457685 0 0 0 0.24285,1.18165 0.84870123,0.84870123 0 0 0 0.4681,0.14167 0.8219345,0.8219345 0 0 0 0.17365,-0.0183 0.84217276,0.84217276 0 0 0 0.5386,-0.36363 c 0.76187,-1.15554 1.85278,-0.62608 2.063,-0.50857 a 0.8544562,0.8544562 0 0 0 0.8487,-1.48327 z m -0.16648,0.88852 a 0.29965682,0.29965682 0 0 1 -0.40672,0.11034 c -0.63718,-0.35581 -1.94353,-0.61172 -2.79941,0.68744 a 0.29769828,0.29769828 0 1 1 -0.49682,-0.32642 c 0.34013,-0.5164 0.75991,-0.87743 1.24694,-1.07328 a 2.4684149,2.4684149 0 0 1 0.92312,-0.17301 2.9541331,2.9541331 0 0 1 1.42256,0.37017 0.29769828,0.29769828 0 0 1 0.11033,0.40476 z"
+         id="path8"
+         style="fill:#ffffff;stroke-width:0.0652847" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23334px;line-height:normal;font-family:Bagnard;-inkscape-font-specification:Bagnard;text-align:justify;text-decoration-color:#000000;letter-spacing:0.105833px;fill:#f9f9f9;fill-opacity:1;stroke-width:3.96875"
+       x="160.06773"
+       y="23.191935"
+       id="text2"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23334px;stroke-width:3.96875"
+         x="160.06773"
+         y="23.191935"
+         id="tspan3">a collection of ancient DNA damage patterns </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23334px;stroke-width:3.96875"
+         x="160.06773"
+         y="28.48361"
+         id="tspan4">and their causes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:normal;font-family:Bagnard;-inkscape-font-specification:Bagnard;text-align:justify;text-decoration-color:#000000;letter-spacing:0.105833px;fill:#f9f9f9;fill-opacity:1;stroke-width:3.96875"
+       x="160"
+       y="159.00514"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="stroke-width:3.96875"
+         x="160"
+         y="159.00514">with love from the</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:3.96875"
+         x="160"
+         y="164.2968"
+         id="tspan14">SPAAM and HAAM communities</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:3.95746"
+       id="rect3-5"
+       width="125"
+       height="175"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#44ccff;fill-opacity:1;stroke-width:3.96875"
+       id="rect4-3"
+       width="115"
+       height="164.99998"
+       x="5"
+       y="4.9999962" />
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.4"
+       id="rect1"
+       width="25"
+       height="174.99998"
+       x="125"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:normal;font-family:Bagnard;-inkscape-font-specification:Bagnard;text-align:justify;text-decoration-color:#000000;letter-spacing:0.105833px;fill:#44ccff;fill-opacity:1;stroke-width:3.96875"
+       x="170.21165"
+       y="-135.38904"
+       id="text5-0"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan5-2"
+         style="text-align:end;text-anchor:end;fill:#44ccff;fill-opacity:1;stroke-width:3.96875"
+         x="170.21165"
+         y="-135.38904">with love from the</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:end;text-anchor:end;fill:#44ccff;fill-opacity:1;stroke-width:3.96875"
+         x="170.31749"
+         y="-130.09738"
+         id="tspan14-9">SPAAM and HAAM communities</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23334px;line-height:normal;font-family:Bagnard;-inkscape-font-specification:Bagnard;text-align:justify;text-decoration-color:#000000;letter-spacing:0.105833px;fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
+       x="5"
+       y="-135"
+       id="text2-9"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         style="font-size:4.23334px;fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
+         x="5"
+         y="-135"
+         id="tspan3-9">a collection of ancient DNA damage</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:4.23334px;fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
+         x="5"
+         y="-129.70833"
+         id="tspan4-3">patterns and their causes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:normal;font-family:'Albert Sans';-inkscape-font-specification:'Albert Sans';text-align:justify;text-decoration-color:#000000;letter-spacing:0.105833px;fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
+       x="4.9364996"
+       y="-141.67218"
+       id="text1-6"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan1-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Bagnard;-inkscape-font-specification:Bagnard;fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
+         x="4.9364996"
+         y="-141.67218">the little book of smiley plots</tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-dasharray:none;stroke-linecap:round"
+       d="m 170.00001,54.124997 c 0,0 0,29.999998 25,29.999998 h 15"
+       id="path9"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-dasharray:none;stroke-linecap:round"
+       d="m 254.11806,54.243049 c 0,0 0,30 -25,30 h -14.11805"
+       id="path9-5"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-linecap:round;stroke-dasharray:none"
+       d="m 179.51423,98.033933 c 0,0 0,6.042627 5.03552,6.042627 h 3.02132"
+       id="path9-53"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.76389;stroke-linecap:round;stroke-dasharray:none"
+       d="m 200.16155,98.057713 c 0,0 0,6.042627 -5.03552,6.042627 h -2.84367"
+       id="path9-5-5"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.76389;stroke-linecap:round;stroke-dasharray:none"
+       d="m 213.83249,115.29366 c 0,0 0,14.28634 11.90527,14.28634 h 7.14317"
+       id="path9-53-1"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-linecap:round;stroke-dasharray:none"
+       d="m 255.47795,115.34987 c 0,0 0,14.28634 -11.90527,14.28634 h -6.72318"
+       id="path9-5-5-2"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>

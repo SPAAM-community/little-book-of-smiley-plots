@@ -60,7 +60,7 @@
     "href": "partial-udg-single-stranded.html",
     "title": "4  Partial UDG (single-stranded)",
     "section": "",
-    "text": "Figure 4.1: Prince Tjorven by Zandra Fagernäs\n\n\nCARICATURE PLOT GOES HERE\nR/CODE IMAGE GOES HERE\nSMILEY PLOT CAPTION GOES HERE"
+    "text": "Figure 4.1: Prince Tjorven by Zandra Fagernäs\n\n\n\n\n\n\n\nFigure 4.2: Example of a smiley plot of a partial UDG treated single-stranded library, from unpublished data. Damage data generated using DamageProfiler and plotted using R and tidyverse packages (Wickham et al. 2019). DamageProfiler and plotted using R and tidyverse packages (Wickham et al. 2019).\n\n\n\n\nThe smiley plot presented here has been generated from a single-stranded ‘partial UDG’ or ‘UDG-half’ library. UDG or USER Treatment consists of enzymatically cleaving off ends of molecules when a uracil is present. As with single-stranded non-UDG treated libraries, the C to T pattern is retained at both ends due to the lack of a blunt-ending (i.e. clipping off of 3’ overhangs) during the library preparation protocol. Furthermore, as with partial-UDG treated libraries, the USER treatment reaction is not run for the whole time, meaning damage on terminal bases are left. This allows for simultaneous authentication of damage, but makes it easier to then in silico remove damage by ‘trimming’ off one base from either end of each read, so you can ensure you do not incorporate damaged bases into downstream analyses.\n\n\n\n\nWickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the Tidyverse.” Journal of Open Source Software 4 (43): 1686. https://doi.org/10.21105/joss.01686."
   },
   {
     "objectID": "semi-problematic.html",
