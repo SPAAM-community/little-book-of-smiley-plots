@@ -1,21 +1,34 @@
 # Partial UDG (single-stranded)
 
-<!-- ![_CAPTION GOES
-HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature}
--->
+![Prince Tjorven by Zandra Fagernäs](/assets/images/partial-udg-single-stranded/prince_tjorven.png){#fig-partial-udg-single-stranded-caricature height=400px}
 
-_CARICATURE PLOT GOES HERE_
-
-_R/CODE IMAGE GOES HERE_
 ```{r}
-#| label: fig-title-goes-here
-#| fig-cap: _CAPTION GOES HERE_. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| label: fig-partial-udg-single-stranded
+#| fig-cap: Example of a smiley plot of a partial UDG treated single-stranded library, from unpublished data. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot]. [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
 #| echo: false
 #| warning: false
 #| error: false
 
-## R code goes here
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/partial-udg-single-stranded/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/partial-udg-single-stranded/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
 
 ```
 
-_SMILEY PLOT CAPTION GOES HERE_
+The smiley plot presented here has been generated from a single-stranded 'partial UDG' or 'UDG-half' library. UDG or USER Treatment consists of enzymatically cleaving off ends of molecules when a uracil is present. As with single-stranded non-UDG treated libraries, the C to T pattern is retained at _both_ ends due to the lack of a blunt-ending (i.e. clipping off of 3' overhangs) during the library preparation protocol. Furthermore, as with partial-UDG treated libraries, the USER treatment reaction is not run for the whole time, meaning damage on terminal bases are left. This allows for simultaneous authentication of damage, but makes it easier to then _in silico_ remove damage by 'trimming' off one base from either end of each read, so you can ensure you do not incorporate damaged bases into downstream analyses.
