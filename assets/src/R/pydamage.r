@@ -2,20 +2,25 @@
 ## Data manipulation ##
 #######################
 
-pivot_longer_freqmisincorporat <- function(x, reverse, type_colours) {
+pivot_longer_analyze <- function(x, reverse, type_colours) {
     raw_result <- x %>%
-        dplyr::rename(
-            insertion = `->ACGT`,
-            deletion = `ACGT>-`,
-            Position = Pos
-        ) %>%
-        tidyr::pivot_longer(tidyr::contains(c(">", "insertion", "deletion")),
+        select(reference, starts_with("CtoT-")) %>%
+        tidyr::pivot_longer(
+            starts_with("CtoT-"),
             names_to = "Mutation Type",
             values_to = "Frequency"
         ) %>%
-        dplyr::mutate(`Mutation Type` = factor(`Mutation Type`,
-            levels = rev(names(type_colours))
-        ))
+        separate(
+            col = "Mutation Type",
+            into = c("Mutation Type", "Position"),
+            sep = "-",
+        ) %>%
+        dplyr::mutate(
+            `Mutation Type` = factor(`Mutation Type`,
+                levels = rev(names(type_colours))
+            ),
+            Position = as.numeric(Position)
+        )
 
     if (reverse) {
         result <- raw_result %>%
@@ -33,7 +38,7 @@ pivot_longer_freqmisincorporat <- function(x, reverse, type_colours) {
 ## Plotting ##
 ##############
 
-plot_longer_freqmisincorporat <- function(x, reverse, type_colours) {
+plot_longer_analyze <- function(x, reverse, type_colours) {
     result <- ggplot2::ggplot(
         x,
         aes(
@@ -57,14 +62,14 @@ plot_longer_freqmisincorporat <- function(x, reverse, type_colours) {
 
     if (reverse) {
         result <- result +
-            ggplot2::scale_x_continuous(breaks = seq(0, -14, -1)) +
+            ggplot2::scale_x_continuous(breaks = seq(0, -28, -1)) +
             ggplot2::scale_y_continuous(
                 breaks = seq(0, 0.30, 0.05),
                 position = "right"
             )
     } else {
         result <- result +
-            ggplot2::scale_x_continuous(breaks = seq(0, 14, 1)) +
+            ggplot2::scale_x_continuous(breaks = seq(0, 28, 1)) +
             ggplot2::scale_y_continuous(breaks = seq(0, 0.30, 0.05))
     }
 
