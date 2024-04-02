@@ -24,10 +24,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.1331768"
-     inkscape:cx="601.84783"
-     inkscape:cy="337.10538"
-     inkscape:current-layer="layer1">
+     inkscape:zoom="0.83794875"
+     inkscape:cx="547.1695"
+     inkscape:cy="286.4137"
+     inkscape:current-layer="layer1"
+     showguides="true">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -44,9 +45,71 @@
        gridanglex="30"
        gridanglez="30"
        visible="true" />
+    <sodipodi:guide
+       position="255.00001,140"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="207.73634,170.00001"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="195,5.0000067"
+       orientation="0,-1"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="270,60.000007"
+       orientation="1,0"
+       id="guide5"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="155,60.000007"
+       orientation="1,0"
+       id="guide6"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="125,85.000004"
+       orientation="1,0"
+       id="guide7"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="150.00001,95.000003"
+       orientation="1,0"
+       id="guide8"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5,115.00001"
+       orientation="1,0"
+       id="guide9"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="170.00001,95.000003"
+       orientation="1,0"
+       id="guide10"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="255,40.000007"
+       orientation="1,0"
+       id="guide11"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="250.00001,35.000005"
+       orientation="0,-1"
+       id="guide13"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
-     id="defs1" />
+     id="defs1">
+    <rect
+       x="37.795277"
+       y="37.795274"
+       width="377.95277"
+       height="113.38582"
+       id="rect15" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -225,35 +288,27 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Bagnard;-inkscape-font-specification:Bagnard;fill:#ff1053;fill-opacity:1;stroke-width:3.96875"
          x="4.9364996"
          y="-141.67218">the little book of smiley plots</tspan></text>
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-dasharray:none;stroke-linecap:round"
-       d="m 170.00001,54.124997 c 0,0 0,29.999998 25,29.999998 h 15"
-       id="path9"
-       sodipodi:nodetypes="csc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-dasharray:none;stroke-linecap:round"
-       d="m 254.11806,54.243049 c 0,0 0,30 -25,30 h -14.11805"
-       id="path9-5"
-       sodipodi:nodetypes="ccc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-linecap:round;stroke-dasharray:none"
-       d="m 179.51423,98.033933 c 0,0 0,6.042627 5.03552,6.042627 h 3.02132"
-       id="path9-53"
-       sodipodi:nodetypes="csc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.76389;stroke-linecap:round;stroke-dasharray:none"
-       d="m 200.16155,98.057713 c 0,0 0,6.042627 -5.03552,6.042627 h -2.84367"
-       id="path9-5-5"
-       sodipodi:nodetypes="ccc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.76389;stroke-linecap:round;stroke-dasharray:none"
-       d="m 213.83249,115.29366 c 0,0 0,14.28634 11.90527,14.28634 h 7.14317"
-       id="path9-53-1"
-       sodipodi:nodetypes="csc" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1.76388889;stroke-linecap:round;stroke-dasharray:none"
-       d="m 255.47795,115.34987 c 0,0 0,14.28634 -11.90527,14.28634 h -6.72318"
-       id="path9-5-5-2"
-       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,9.4083133e-5,135.23759)"
+       id="text15"
+       style="font-size:16px;line-height:normal;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans';text-align:start;text-decoration-color:#000000;letter-spacing:0.4px;white-space:pre;shape-inside:url(#rect15);display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.66667;stroke-linecap:round"
+       x="-351.94321"
+       y="0"><tspan
+         x="37.794922"
+         y="55.794922"
+         id="tspan6"><tspan
+           style="font-family:Bagnard;-inkscape-font-specification:Bagnard;stroke:none"
+           id="tspan2">a light hearted reference book to help </tspan></tspan><tspan
+         x="37.794922"
+         y="79.794922"
+         id="tspan8"><tspan
+           style="font-family:Bagnard;-inkscape-font-specification:Bagnard;stroke:none"
+           id="tspan7">palaeogenomicists understand their ancient </tspan></tspan><tspan
+         x="37.794922"
+         y="103.79492"
+         id="tspan10"><tspan
+           style="font-family:Bagnard;-inkscape-font-specification:Bagnard;stroke:none"
+           id="tspan9">DNA misincorporation plots. </tspan></tspan></text>
   </g>
 </svg>
