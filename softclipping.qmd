@@ -29,8 +29,8 @@ This smiley plot can often be seen when using certain short-read mapping setting
 In particular researchers using the aligner `bowtie2` with one of the `local` modes will often see 0% damage on the first couple of positions from the end of the read, but then the subsequent frequencies along the remainder of the read will have a 'typical' damage pattern curve.
 
 When in `local` mode, the aligner will allow 'soft-clipping'. 
-Soft-clipping is where the aligner finds that the inner-portion of the read maps optimally to the reference, except for the ends of the reads.
-In soft-clipping, the aligner will 'ignore' the ends of the reads and not use this information in the final alignment however retain those nucleotides in the alignment file (as opposed to hard-clipping which removes these bases entirely and are 'lost' to downstream processes). This is commonly performed in modern DNA studies as retaining ends of the reads are not important compared to getting a highly accurate alignment overall.
+Soft-clipping was introduced to aligners when the length of DNA sequencing data increased and alignment issues occurred, e.g. transcriptome data could not be aligned due to the splicing of RNA. Therefore, the aligner gained the ability to keep alignments when only the inner-portion of the read maps optimally to the reference genome.
+In soft-clipping, the aligner will 'ignore' the ends of the reads and not use this information for evaluating the final alignment, however, it will retain those nucleotides in the alignment file. This is opposed to hard-clipping, during which these bases are entirely removed and are therefore 'lost' to downstream processes. This is commonly performed in modern DNA studies but can lead to issues in ancient DNA studies.
 
 For example, the aligner may clip off read ends that have damage because it is alignment-wise better than having three consecutive bases that have damage.
 
