@@ -18,3 +18,7 @@ type_colours_dp <- c(
     "insertion" = "grey",
     "deletion" = "grey"
 )
+
+type_colours_pd <- c(
+    "CtoT" = "red"
+)

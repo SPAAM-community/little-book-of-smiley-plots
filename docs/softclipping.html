@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Little Book of Smiley Plots - Valid Smiley Plots</title>
+<title>The Little Book of Smiley Plots - 7&nbsp; Soft-clipping</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +49,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./double-stranded.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./problematic.html" rel="next">
+<link href="./barcode-ligation-bias.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -76,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./valid.html">Valid Smiley Plots</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./semi-problematic.html">Half Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./softclipping.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -146,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./valid.html" class="sidebar-item-text sidebar-link active">
+            <a href="./valid.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Valid Smiley Plots</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -202,7 +221,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./softclipping.html" class="sidebar-item-text sidebar-link">
+  <a href="./softclipping.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></span></a>
   </div>
 </li>
@@ -250,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Valid Smiley Plots</h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></h1>
 </div>
 
 
@@ -265,10 +284,29 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This section of the litte book of smiley plots shows damage patterns as they <em>should</em> be from a molecular biology point of view.</p>
-<p>These are the ones that will immediately make <em>you</em> smile as these give you good indications of valid ancient DNA in your sequencing library!</p>
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+<p><em>CARICATURE PLOT GOES HERE</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-softclipping" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="softclipping_files/figure-html/fig-softclipping-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;7.1: Example of a smiley plot of soft-clipped ancient DNA data as represented in <a href="./intro.md">PyDamage</a> output. Data taken from an unpublished library. Plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>. Note that the smiley plot above is not the ‘typical’ PyDamage output, however it is a simplified version of the ‘C to T transitions’ line in PyDamage plots represented here for illustrative purposes.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>This smiley plot can often be seen when using certain short-read mapping settings. In particular researchers using the aligner <code>bowtie2</code> with one of the <code>local</code> modes will often see 0% damage on the first couple of positions from the end of the read, but then the subsequent frequencies along the remainder of the read will have a ‘typical’ damage pattern curve.</p>
+<p>When in <code>local</code> mode, the aligner will allow ‘soft-clipping’. Soft-clipping is where the aligner finds that the inner-portion of the read maps optimally to the reference, except for the ends of the reads. In soft-clipping, the aligner will ‘ignore’ the ends of the reads and not use this information in the final alignment however retain those nucleotides in the alignment file (as opposed to hard-clipping which removes these bases entirely and are ‘lost’ to downstream processes). This is commonly performed in modern DNA studies as retaining ends of the reads are not important compared to getting a highly accurate alignment overall.</p>
+<p>For example, the aligner may clip off read ends that have damage because it is alignment-wise better than having three consecutive bases that have damage.</p>
+<p>In such cases, a researcher can try to use the <code>global</code> alignment mode in such such aligners (e.g.&nbsp;with <code>--sensitive</code> rather than <code>--sensitive-local</code> in <code>bowtie2</code>). Otherwise, if the pattern is sufficiently strong (and the alignments are trusted), a researcher can still use the plot and data as long as the pattern of the missing first few bases is described.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -621,13 +659,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="./barcode-ligation-bias.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Internal Barcode Ligation Bias</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./double-stranded.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Double stranded DNA libraries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./problematic.html" class="pagination-link">
+        <span class="nav-page-text">Invalid Smiley Plots</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

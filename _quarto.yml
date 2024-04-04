@@ -28,6 +28,7 @@ book:
       chapters:
         - proofreading-polymerase.qmd
         - barcode-ligation-bias.qmd
+        - softclipping.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd

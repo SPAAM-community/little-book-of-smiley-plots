@@ -1,0 +1,37 @@
+# Soft-clipping
+
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+```{r}
+#| label: fig-softclipping
+#| fig-cap: Example of a smiley plot of soft-clipped ancient DNA data as represented in [PyDamage](/intro.md) output. Data taken from an unpublished library. Plotted using R and tidyverse packages [@Wickham2019-ot]. Note that the smiley plot above is not the 'typical' PyDamage output, however it is a simplified version of the 'C to T transitions' line in PyDamage plots represented here for illustrative purposes.
+#| echo: false
+#| warning: false
+#| error: false
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/pydamage.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_csv("assets/data/softclipping/pydamage_results.txt", comment = "#")
+long_5p <- pivot_longer_analyze(raw_5p, FALSE, type_colours_pd)
+plot_longer_analyze(long_5p, FALSE, type_colours_pd)
+```
+
+This smiley plot can often be seen when using certain short-read mapping settings.
+In particular researchers using the aligner `bowtie2` with one of the `local` modes will often see 0% damage on the first couple of positions from the end of the read, but then the subsequent frequencies along the remainder of the read will have a 'typical' damage pattern curve.
+
+When in `local` mode, the aligner will allow 'soft-clipping'. 
+Soft-clipping was introduced to aligners when the length of DNA sequencing data increased and alignment issues occurred, e.g. transcriptome data could not be aligned due to the splicing of RNA. Therefore, the aligner gained the ability to keep alignments when only the inner-portion of the read maps optimally to the reference genome.
+In soft-clipping, the aligner will 'ignore' the ends of the reads and not use this information for evaluating the final alignment, however, it will retain those nucleotides in the alignment file. This is opposed to hard-clipping, during which these bases are entirely removed and are therefore 'lost' to downstream processes. This is commonly performed in modern DNA studies but can lead to issues in ancient DNA studies.
+
+For example, the aligner may clip off read ends that have damage because it is alignment-wise better than having three consecutive bases that have damage.
+
+In such cases, a researcher can try to use the `global` alignment mode in such such aligners (e.g. with `--sensitive` rather than `--sensitive-local` in `bowtie2`). Otherwise, if the pattern is sufficiently strong (and the alignments are trusted), a researcher can still use the plot and data as long as the pattern of the missing first few bases is described.

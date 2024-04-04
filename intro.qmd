@@ -43,7 +43,7 @@ These tools may take different approaches to generating their alignments (or eve
   - Source: [https://github.com/rhuebler/MaltExtract](https://github.com/rhuebler/MaltExtract)
   - Documentation:  [https://github.com/rhuebler/MaltExtract](https://github.com/rhuebler/MaltExtract)
   - Citation: [@Hubler2019-qw]
-- pyDamage
+- PyDamage
   - Source: [https://github.com/maxibor/pydamage](https://github.com/maxibor/pydamage)
   - Documentation: [https://pydamage.readthedocs.io/en/0.7/](https://pydamage.readthedocs.io/en/0.7/)
   - Citation: [@Borry2021-lt]
