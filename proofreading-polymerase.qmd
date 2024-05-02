@@ -1,10 +1,6 @@
-<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
-
 # Proofreading enzymes
 
-<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
-
-_CARICATURE PLOT GOES HERE_
+![By AK Wiborg Runge](assets/images/proofreading-polymerase/proofreading_enzyme.png){#fig-proofreading-polymerase-caricature height=400px}
 
 ```{r}
 #| label: fig-template
