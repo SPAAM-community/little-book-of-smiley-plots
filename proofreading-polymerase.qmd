@@ -1,6 +1,6 @@
 # Proofreading enzymes
 
-![By AK Wiborg Runge](assets/images/proofreading-polymerase/proofreading_enzyme.png){#fig-proofreading-polymerase-caricature height=400px}
+![Sebastian Sprudelwasser, on his way to a Berlin Rave. By Anne Kathrine Wiborg Runge](assets/images/proofreading-polymerase/sebastian_sprudelwasser.png){#fig-proofreading-polymerase-caricature height=400px}
 
 ```{r}
 #| label: fig-template
