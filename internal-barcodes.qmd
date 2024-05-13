@@ -1,8 +1,7 @@
 # Internal barcodes not removed 
 
-<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+![Sasha just can’t get any work done while the office keeps blasting 10 different songs at once! By Petra Korlević](assets/images/internal-barcodes/sasha.png){#fig-internal-barcodes height=400px}
 
-_CARICATURE PLOT GOES HERE_
 
 ```{r}
 #| label: fig-internal-barcodes
