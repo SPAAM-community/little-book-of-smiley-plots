@@ -1,0 +1,41 @@
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
+
+# Left over adapter
+
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+```{r}
+#| label: fig-template
+#| fig-cap: Example of a smiley plot with high frequency of a single last base, due to a remaining base from an insufficiently clipped off adapter (as it was missing from the sequenced given to the adapter clipping tool). Data taken from unpublished data . Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary::glossary_popup("hover")
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/leftover-adapter/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/leftover-adapter/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
+```
+
+<!-- TEMPLATE Description goes here -->
