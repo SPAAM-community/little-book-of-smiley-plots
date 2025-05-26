@@ -4,6 +4,7 @@
 ![Egbert by James A. Fellows Yates](/assets/images/insufficient-reads/egbert.png){#fig-insufficient-reads-caricature height=400px}
 
 
+
 ```{r}
 #| label: fig-insufficient-reads
 #| fig-cap: Example of a smiley plot of an alignment with insufficient reads to generate a confident smiley plot. Data taken from a non-UDG library of a captured Woolly Mammoth mitochondrial genome (JK2782) from [@Fellows_Yates2017-rp], and sampled aligned reads down to 50 reads. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].

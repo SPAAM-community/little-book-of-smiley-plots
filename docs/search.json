@@ -151,7 +151,7 @@
     "href": "leftover-adapter.html",
     "title": "8  Left over adapter",
     "section": "",
-    "text": "CARICATURE PLOT GOES HERE\n\n\n\n\n\n\n\n\nFigure 8.1: Example of a smiley plot with high frequency of a single last base, due to a remaining base from an insufficiently clipped off adapter (as it was missing from the sequenced given to the adapter clipping tool). Data taken from unpublished data . Damage data generated using mapDamage and plotted using R and tidyverse packages (Wickham et al. 2019).\n\n\n\n\n\n\n\n\n\n\nWickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the Tidyverse.” Journal of Open Source Software 4 (43): 1686. https://doi.org/10.21105/joss.01686.",
+    "text": "CARICATURE PLOT GOES HERE\n\n\n\n\n\n\n\n\nFigure 8.1: Example of a smiley plot with high frequency of a single last base, due to a remaining base from an insufficiently clipped off adapter (as it was missing from the sequenced given to the adapter clipping tool). Data taken from unpublished data . Damage data generated using DamageProfiler and plotted using R and tidyverse packages (Wickham et al. 2019).\n\n\n\n\n\n\n\n\n\n\nWickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the Tidyverse.” Journal of Open Source Software 4 (43): 1686. https://doi.org/10.21105/joss.01686.",
     "crumbs": [
       "Half Valid Smiley Plots",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Left over adapter</span>"

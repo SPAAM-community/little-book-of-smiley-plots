@@ -1,6 +1,5 @@
-<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
-
 # Left over adapter
+
 
 <!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 
