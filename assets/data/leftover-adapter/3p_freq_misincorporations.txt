@@ -1,6 +1,6 @@
 # table produced by DamageProfiler
-# using mapped file RickettsiaFelis_Aligned.sorted.dedup.bam
-# Sample ID: RickettsiaFelis_Aligned.sorted.dedup.bam
+# using mapped file Aligned.sorted.dedup.bam
+# Sample ID: Aligned.sorted.dedup.bam
 Pos	C>T	G>A	A>C	A>G	A>T	C>A	C>G	G>C	G>T	T>A	T>C	T>G	->ACGT	ACGT>-
 24	0.000519	0.001574	0.000785	0.001047	0.000131	0.000778	0.000000	0.000262	0.001312	0.000000	0.000128	0.000898	0.000043	0.000000
 23	0.000529	0.000513	0.000913	0.000391	0.000391	0.000794	0.000794	0.000257	0.002309	0.000000	0.000773	0.000773	0.000130	0.000000
