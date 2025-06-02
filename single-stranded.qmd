@@ -2,6 +2,8 @@
 
 ![Homage to the best moustache ever (Salvador Dalí) by Nihan D. Dagtas. Based upon ['Salvador Dalí' by Philippe Halsman (1953)](https://www.wikiart.org/en/philippe-halsman/salvador-dali-1953) from [wikiart.org](wikiart.org). Used under the 'Fair Use' as defined on Wikiart and is used for educational purposes](/assets/images/single-stranded/salvador.png){#fig-single-stranded-caricature height=400px}
 
+\newpage
+
 ```{r}
 #| label: fig-single-stranded-smiley
 #| fig-cap: Example of a smiley plot of a double stranded DNA library. Data taken from library VEL003.B0101 of [@Andrades_Valtuena2022-tq]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].

@@ -8,7 +8,7 @@ book:
   title: "The Little Book of Smiley Plots"
   subtitle: "A collection of ancient DNA patterns and their causes"
   author: "The SPAAM Community"
-  date: "25/05/2023"
+  date: last-modified
   license: "CC-BY 4.0"
   page-navigation: true
   language: "en-GB"
@@ -53,4 +53,4 @@ format:
       light: cosmo
       dark: cyborg
   pdf:
-    documentclass: scrreprt
+    documentclass: book

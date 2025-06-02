@@ -3,7 +3,7 @@
 
 ![Egbert by James A. Fellows Yates](/assets/images/insufficient-reads/egbert.png){#fig-insufficient-reads-caricature height=400px}
 
-
+\newpage
 
 ```{r}
 #| label: fig-insufficient-reads

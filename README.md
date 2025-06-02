@@ -29,7 +29,12 @@ Additional recommendations:
 
 ## Development Guidelines
 
-Once changes to the markdown contents are made, you must re-render the book before pushing.
+Once changes to the _markdown_ contents are made, you can preview locally, but you must re-render the book before pushing.
 
-- `quarto render --to all`
-- `quarto preview` to preview the book locally
+- To preview: `quarto preview . --no-browser --no-watch-inputs`
+- To re-render: `quarto render --to all`
+- Then git commit and push
+
+> [!WARNING]
+> If changes are made to _R_ code (e.g. under `src/R`), you MUST re-render _before_ live previewing!
+> While markdown changes can be updated on the fly, R-code generated images are not updated in real time.

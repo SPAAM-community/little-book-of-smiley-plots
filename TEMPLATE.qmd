@@ -6,6 +6,8 @@
 
 _CARICATURE PLOT GOES HERE_
 
+\newpage
+
 ```{r}
 #| label: fig-template
 #| fig-cap: Example of a smiley plot of a TEMPLATE. Data taken from library TEMPLATE of [@TEMPLATE]. Damage data generated using [TEMPLATE](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].

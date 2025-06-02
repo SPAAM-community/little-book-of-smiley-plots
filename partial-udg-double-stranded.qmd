@@ -4,6 +4,7 @@
 
 _CARICATURE PLOT GOES HERE_
 
+\newpage
 
 ```{r}
 #| label: fig-udg-double-stranded

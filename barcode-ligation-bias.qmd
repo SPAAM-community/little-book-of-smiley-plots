@@ -6,6 +6,8 @@
 
 _CARICATURE PLOT GOES HERE_
 
+\newpage
+
 ```{r}
 #| label: fig-udg-double-stranded
 #| fig-cap: Example of a smiley plot of an internal barcoded double-stranded library with a ligation bias of certain barcodes. Data taken from sample Ua9 (ERS4545914) of [@Brealey2020-mu]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].

@@ -2,6 +2,7 @@
 
 ![Sasha just can’t get any work done while the office keeps blasting 10 different songs at once! By Petra Korlević](assets/images/internal-barcodes/sasha.png){#fig-internal-barcodes height=400px}
 
+\newpage
 
 ```{r}
 #| label: fig-internal-barcodes

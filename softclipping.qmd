@@ -4,6 +4,8 @@
 
 _CARICATURE PLOT GOES HERE_
 
+\newpage
+
 ```{r}
 #| label: fig-softclipping
 #| fig-cap: Example of a smiley plot of soft-clipped ancient DNA data as represented in [PyDamage](/intro.md) output. Data taken from an unpublished library. Plotted using R and tidyverse packages [@Wickham2019-ot]. Note that the smiley plot above is not the 'typical' PyDamage output, however it is a simplified version of the 'C to T transitions' line in PyDamage plots represented here for illustrative purposes.

@@ -2,6 +2,8 @@
 
 ![Prince Tjorven by Zandra Fagernäs](/assets/images/partial-udg-single-stranded/prince_tjorven.png){#fig-partial-udg-single-stranded-caricature height=400px}
 
+\newpage
+
 ```{r}
 #| label: fig-partial-udg-single-stranded
 #| fig-cap: Example of a smiley plot of a partial UDG treated single-stranded library, from unpublished data. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot]. [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
