@@ -21,8 +21,15 @@ We want to give the artists of caricatures as much stylistic and creative freedo
 2. They must be a caricature of a face (neither species, nor realism are important - but in most cases do not images of living people)
 3. Must incorporate a damage profiles into it (of those that do not have one in the book already - please assign/leave a comment on the respective [GitHub issue](https://github.com/SPAAM-community/little-book-of-smiley-plots/issues)!)
 4. Other than gray scale (black, white, shades of grey), can only use three colours: red, blue, and one additional your choice
-5. Must not violate the [SPAAM code of conduct](https://spaam-community.org/code-of-conduct/)(i.e, not contain sexist, racise, homophobic illegal, defamatory, rude, imagery etc.)
+5. Must not violate the [SPAAM code of conduct](https://spaam-community.org/code-of-conduct/)(i.e, not contain sexist, racist, homophobic illegal, defamatory, rude, imagery etc.)
 
 Additional recommendations:
 
 - The image should be shared in vector format (to allow resizing), if possible
+
+## Development Guidelines
+
+Once changes to the markdown contents are made, you must re-render the book before pushing.
+
+- `quarto render --to all`
+- `quarto preview` to preview the book locally
