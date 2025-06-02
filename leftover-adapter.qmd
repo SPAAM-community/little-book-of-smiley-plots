@@ -1,0 +1,42 @@
+# Left over adapter
+
+
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+```{r}
+#| label: fig-template
+#| fig-cap: Example of a smiley plot with high frequency of a single last base, due to a remaining base from an insufficiently clipped off adapter (as it was missing from the sequenced given to the adapter clipping tool). Data taken from unpublished data . Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+library(glossary)
+glossary::glossary_path("glossary.yml")
+glossary::glossary_popup("hover")
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/leftover-adapter/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/leftover-adapter/3p_freq_misincorporations.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours)
+
+smiley_5p + smiley_3p
+```
+
+The smiley plot was generated from a double-stranded, non-UDG treated library and displays an increase in the G→A and C→T misincorporation frequencies at the first base of the 3' termini. The library was preprocessed with AdapterRemoval v2.1.7, which performs adapter trimming and paired-end merging based on sequence overlap. A known limitation of this approach is that asymmetric read pairs (e.g., reads with leading Ns or differing insert sizes) can result in incomplete adapter removal or loss of authentic fragment termini. In this instance, a single 3' terminal adapter base remained, leading to an artificial inflation of the damage frequency.
+
+In case you get a similar plot and you still have your raw FASTQ files (and you probably do), you can easily reprocess them with a cleaner approach — e.g. Cutadapt + Flash (or another preferred tool for trimming/merging).
