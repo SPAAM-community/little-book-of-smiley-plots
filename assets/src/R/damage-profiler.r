@@ -9,6 +9,7 @@ pivot_longer_freqmisincorporat <- function(x, reverse, type_colours) {
             deletion = `ACGT>-`,
             Position = Pos
         ) %>%
+        filter(Position <= 14) %>%
         tidyr::pivot_longer(tidyr::contains(c(">", "insertion", "deletion")),
             names_to = "Mutation Type",
             values_to = "Frequency"

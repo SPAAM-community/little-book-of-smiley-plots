@@ -120,6 +120,7 @@ div.csl-indent {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The Little Book of Smiley Plots</a> 
         <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/spaam-community/little-book-of-smiley-plots" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -316,10 +317,21 @@ Figure&nbsp;8.1: Example of a smiley plot with high frequency of a single last b
 </div>
 </div>
 </div>
-<!-- TEMPLATE Description goes here -->
+<p>The smiley plot was generated from a double-stranded, non-UDG treated library. It displays a very significant G to A frequency increase (exceeding 30%) at the first base of the 3’ termini, as well as a small increase for C to T misincorporations and other base changes.</p>
+<p>The library was preprocessed with AdapterRemoval (v2.1.7) for adapter trimming and paired-end merging based on sequence overlap. A known limitation of this approach is that asymmetric read pairs (e.g., reads with leading Ns or differing insert sizes) can result in incomplete adapter removal or loss of authentic fragment termini. In this instance, a single 3’ terminal adapter base remained after adapter trimming, leading to an artificial inflation of the damage frequency.</p>
+<p>In case you get a similar plot and you still have your raw FASTQ files (and you probably do), you can easily reprocess them with a cleaner approach — e.g.&nbsp;another tool such as fastp <span class="citation" data-cites="Chen2018-vg">(<a href="references.html#ref-Chen2018-vg" role="doc-biblioref">Chen et al. 2018</a>)</span>, Cutadapt <span class="citation" data-cites="Martin2011-ae">(<a href="references.html#ref-Martin2011-ae" role="doc-biblioref">Martin 2011</a>)</span> with Flash <span class="citation" data-cites="Magoc2011-xl">(<a href="references.html#ref-Magoc2011-xl" role="doc-biblioref">Magoč and Salzberg 2011</a>)</span> (or another preferred tool for trimming/merging).</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Chen2018-vg" class="csl-entry" role="listitem">
+Chen, Shifu, Yanqing Zhou, Yaru Chen, and Jia Gu. 2018. <span>“Fastp: An Ultra-Fast All-in-One <span>FASTQ</span> Preprocessor.”</span> <em>Bioinformatics</em> 34 (17): i884–90. <a href="https://doi.org/10.1093/bioinformatics/bty560">https://doi.org/10.1093/bioinformatics/bty560</a>.
+</div>
+<div id="ref-Magoc2011-xl" class="csl-entry" role="listitem">
+Magoč, Tanja, and Steven L Salzberg. 2011. <span>“<span>FLASH</span>: Fast Length Adjustment of Short Reads to Improve Genome Assemblies.”</span> <em>Bioinformatics (Oxford, England)</em> 27 (21): 2957–63. <a href="https://doi.org/10.1093/bioinformatics/btr507">https://doi.org/10.1093/bioinformatics/btr507</a>.
+</div>
+<div id="ref-Martin2011-ae" class="csl-entry" role="listitem">
+Martin, Marcel. 2011. <span>“Cutadapt Removes Adapter Sequences from High-Throughput Sequencing Reads.”</span> <em>EMBnet.journal</em> 17 (1): 10. <a href="https://doi.org/10.14806/ej.17.1.200">https://doi.org/10.14806/ej.17.1.200</a>.
+</div>
 <div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
 Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
@@ -898,7 +910,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>With ❤️ from the SPAAM Community. CC-BY 4.0</p>
+<p><a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY 4.0</a>. <a href="https://github.com/spaam-community/little-book-of-smiley-plots">Source</a>. With ❤️ from the <a href="https://spaam-community.org">SPAAM Community</a>.</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

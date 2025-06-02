@@ -814,3 +814,108 @@
   issn     = {0962-8436,1471-2970},
   language = {en}
 }
+
+@article{Chen2018-vg,
+  title     = {fastp: an ultra-fast all-in-one {FASTQ} preprocessor},
+  author    = {Chen, Shifu and Zhou, Yanqing and Chen, Yaru and Gu, Jia},
+  journal   = {Bioinformatics},
+  publisher = {Oxford University Press},
+  volume    = 34,
+  number    = 17,
+  pages     = {i884--i890},
+  abstract  = {Quality control and preprocessing of FASTQ files are essential to
+               providing clean data for downstream analysis. Traditionally, a
+               different tool is used for each operation, such as quality
+               control, adapter trimming and quality filtering. These tools are
+               often insufficiently fast as most are developed using high-level
+               programming languages (e.g. Python and Java) and provide limited
+               multi-threading support. Reading and loading data multiple times
+               also renders preprocessing slow and I/O inefficient.We developed
+               fastp as an ultra-fast FASTQ preprocessor with useful quality
+               control and data-filtering features. It can perform quality
+               control, adapter trimming, quality filtering, per-read quality
+               pruning and many other operations with a single scan of the FASTQ
+               data. This tool is developed in C++ and has multi-threading
+               support. Based on our evaluation, fastp is 2–5 times faster than
+               other FASTQ preprocessing tools such as Trimmomatic or Cutadapt
+               despite performing far more operations than similar tools.The
+               open-source code and corresponding instructions are available at
+               https://github.com/OpenGene/fastp.},
+  month     = sep,
+  year      = 2018,
+  url       = {https://academic.oup.com/bioinformatics/article/34/17/i884/5093234},
+  doi       = {10.1093/bioinformatics/bty560},
+  issn      = {1367-4803}
+}
+
+
+@article{Martin2011-ae,
+  title     = {Cutadapt removes adapter sequences from high-throughput
+               sequencing reads},
+  author    = {Martin, Marcel},
+  journal   = {EMBnet.journal},
+  publisher = {EMBnet Stichting},
+  volume    = 17,
+  number    = 1,
+  pages     = 10,
+  abstract  = {When small RNA is sequenced on current sequencing machines, the
+               resulting reads are usually longer than the RNA and therefore
+               contain parts of the 3' adapter. That adapter must be found and
+               removed error-tolerantly from each read before read mapping.
+               Previous solutions are either hard to use or do not offer
+               required features, in particular support for color space data. As
+               an easy to use alternative, we developed the command-line tool
+               cutadapt, which supports 454, Illumina and SOLiD (color space)
+               data, offers two adapter trimming algorithms, and has other
+               useful features. Cutadapt, including its MIT-licensed source
+               code, is available for download at
+               http://code.google.com/p/cutadapt/},
+  month     = may,
+  year      = 2011,
+  url       = {https://journal.embnet.org/index.php/embnetjournal/article/view/200},
+  keywords  = {next generation sequencing; small RNA; microRNA; adapter removal},
+  doi       = {10.14806/ej.17.1.200},
+  issn      = {2226-6089,2226-6089},
+  language  = {en}
+}
+@article{Magoc2011-xl,
+  title     = {{FLASH}: fast length adjustment of short reads to improve genome
+               assemblies},
+  author    = {Magoč, Tanja and Salzberg, Steven L},
+  journal   = {Bioinformatics (Oxford, England)},
+  publisher = {Oxford University Press (OUP)},
+  volume    = 27,
+  number    = 21,
+  pages     = {2957--2963},
+  abstract  = {MOTIVATION: Next-generation sequencing technologies generate very
+               large numbers of short reads. Even with very deep genome
+               coverage, short read lengths cause problems in de novo
+               assemblies. The use of paired-end libraries with a fragment size
+               shorter than twice the read length provides an opportunity to
+               generate much longer reads by overlapping and merging read pairs
+               before assembling a genome. RESULTS: We present FLASH, a fast
+               computational tool to extend the length of short reads by
+               overlapping paired-end reads from fragment libraries that are
+               sufficiently short. We tested the correctness of the tool on one
+               million simulated read pairs, and we then applied it as a
+               pre-processor for genome assemblies of Illumina reads from the
+               bacterium Staphylococcus aureus and human chromosome 14. FLASH
+               correctly extended and merged reads >99\% of the time on
+               simulated reads with an error rate of <1\%. With adequately set
+               parameters, FLASH correctly merged reads over 90\% of the time
+               even when the reads contained up to 5\% errors. When FLASH was
+               used to extend reads prior to assembly, the resulting assemblies
+               had substantially greater N50 lengths for both contigs and
+               scaffolds. AVAILABILITY AND IMPLEMENTATION: The FLASH system is
+               implemented in C and is freely available as open-source code at
+               http://www.cbcb.umd.edu/software/flash. CONTACT:
+               t.magoc@gmail.com.},
+  month     = nov,
+  year      = 2011,
+  url       = {https://academic.oup.com/bioinformatics/article-pdf/27/21/2957/48863763/bioinformatics_27_21_2957.pdf},
+  doi       = {10.1093/bioinformatics/btr507},
+  pmc       = {PMC3198573},
+  pmid      = 21903629,
+  issn      = {1367-4803,1367-4811},
+  language  = {en}
+}

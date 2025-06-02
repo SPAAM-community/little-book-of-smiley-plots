@@ -37,6 +37,11 @@ smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours
 smiley_5p + smiley_3p
 ```
 
-The smiley plot was generated from a double-stranded, non-UDG treated library and displays an increase in the G→A and C→T misincorporation frequencies at the first base of the 3' termini. The library was preprocessed with AdapterRemoval v2.1.7, which performs adapter trimming and paired-end merging based on sequence overlap. A known limitation of this approach is that asymmetric read pairs (e.g., reads with leading Ns or differing insert sizes) can result in incomplete adapter removal or loss of authentic fragment termini. In this instance, a single 3' terminal adapter base remained, leading to an artificial inflation of the damage frequency.
+The smiley plot was generated from a double-stranded, non-UDG treated library.
+It displays a very significant G to A frequency increase (exceeding 30%) at the first base of the 3' termini, as well as a small increase for C to T  misincorporations and other base changes. 
 
-In case you get a similar plot and you still have your raw FASTQ files (and you probably do), you can easily reprocess them with a cleaner approach — e.g. Cutadapt + Flash (or another preferred tool for trimming/merging).
+The library was preprocessed with AdapterRemoval (v2.1.7) for adapter trimming and paired-end merging based on sequence overlap.
+A known limitation of this approach is that asymmetric read pairs (e.g., reads with leading Ns or differing insert sizes) can result in incomplete adapter removal or loss of authentic fragment termini. 
+In this instance, a single 3' terminal adapter base remained after adapter trimming, leading to an artificial inflation of the damage frequency.
+
+In case you get a similar plot and you still have your raw FASTQ files (and you probably do), you can easily reprocess them with a cleaner approach — e.g. another tool such as fastp [@Chen2018-vg], Cutadapt [@Martin2011-ae] with Flash [@Magoc2011-xl] (or another preferred tool for trimming/merging).

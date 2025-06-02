@@ -11,9 +11,13 @@ book:
   date: "25/05/2023"
   license: "CC-BY 4.0"
   page-navigation: true
+  language: "en-GB"
+  back-to-top-navigation: true
   downloads: [pdf, epub]
   site-url: https://spaam-community.github.io/little-book-of-smiley-plots
+  repo-url: https://github.com/spaam-community/little-book-of-smiley-plots
   reader-mode: true
+  bread-crumbs: true
   chapters:
     - index.qmd
     - contributors.qmd
@@ -39,7 +43,7 @@ book:
     #    - placeholder.qmd
     #- glossary.qmd
     - references.qmd
-  page-footer: "With ❤️ from the SPAAM Community. CC-BY 4.0"
+  page-footer: "[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). [Source](https://github.com/spaam-community/little-book-of-smiley-plots). With ❤️ from the [SPAAM Community](https://spaam-community.org)."
 
 bibliography: references.bib
 
