@@ -36,15 +36,21 @@ smiley_5p + smiley_3p
 Sometimes the type of polymerase you use during library construction will influence the type of damage pattern you will receive.
 
 In the example above, @Cai2022-rp found a funny smiley plot, where while the 3' G to A patterns look like a classic non-UDG (i.e. non-USER treated, thus retaining damage) plot, the frequency of C to T on the 5' end was extremely reduced.
+This is because of the choice of polymerase used during library construction was not conductive to the nature of ancient DNA.
 
-They identified the problem as the choice of polymerase. The Q5 polymerase is a 'high fidelity' enzyme, which corresponds to being a 'proofreading' enzyme. This means that when the enzyme hits an incorrect nucleotide (such as a deaminated cytosine), it will instead remove the nucleotide on it's 3' to 5' exonuclease activity [^1].
+In this paper, the Q5® High-Fidelity DNA Polymerase was used, which has no tolerance for uracils.
+During replication, it stalls on uracils in the template DNA, and hence cannot proceed with extending the newly forming complement strand. 
+As the original strand with the uracil stops early, it results in a single-stranded overhang without an adapter.
+Thus. the C-to-T deamination at the 5' termini of the reads will be absent in the plot.
+In contrast, the original complementary DNA strand, which is filled-in by another DNA polymerase during the blunt-ending step of the double-stranded library preparation, will still contain the complementary A nucleotide.
+This means the G-to-A misincorporation pattern is retained in 3' termini of the reads, even if the deaminated cytosines were lost on the first strand.
 
 While having a low error rate is great for modern genomics, this can be less optimal for preserving ancient DNA damage for profiling later on.
+Furthermore, you may have lost a fraction of true ancient DNA reads (those that ahve uracils in both strands).
 
-In the case of this particular enzyme, it is maybe not so much of a problem as you retain the damage signal on the 3' for proving authenticity. However this may be problematic for downstream aDNA validation tools that may have an expected 'model' of ancient DNA damage. 
+In the case of this particular enzyme, it may not too much of a problem to prove authenticity visually as you retain the damage signal on the 3'.
+However this may be problematic for downstream aDNA validation tools that may have an expected 'model' of ancient DNA damage.
 
 :::{.callout-tip}
 The choice of enzyme only matters during the first amplification after adapter ligation. At subsequent amplifications, the (misincorporated) thymines have already been integrated into the template molecules, so it doesn't matter which enzyme you use.
 ::: 
-
-[^1]: More information can be found on [this blog post](https://international.neb.com/tools-and-resources/feature-articles/polymerase-fidelity-what-is-it-and-what-does-it-mean-for-your-pcr) on the NEB website
