@@ -45,7 +45,7 @@ This is likely due to a remaining base from an adapter that was not fully clippe
 
 In the example above, the library was preprocessed with AdapterRemoval (v2.1.7) for adapter trimming and paired-end merging based on sequence overlap.
 With paired end data where the DNA 'template' is shorter than the number of sequencing cycles (read length), AdapterRemoval first aligns the two reads to each other.
-It then uses the information from the assumed 'symmetrical overhang' from the alignment, to identify and clipping adapters.
+It then uses the information from the assumed 'symmetrical overhang' from the alignment, to identify and clip the adapters.
 In other words, the sequence of the template should exactly match, and thus the rest of the read that does _not_ overlap is assumed to be adapter sequence.
 A limitation of this version of the tool is that asymmetric read pairs (e.g., reads with leading Ns or differing insert sizes that can 'shift' the template overlap) can result in incomplete adapter removal or loss of authentic fragment termini.
 In this example, a single 3' terminal adapter base remained after adapter trimming due to asymmetric overlap of the templates, leading to an artificial inflation of the damage frequency.
