@@ -327,10 +327,12 @@ Figure&nbsp;5.2: Example of a smiley plot of a double stranded library amplified
 </div>
 </div>
 <p>Sometimes the type of polymerase you use during library construction will influence the type of damage pattern you will receive.</p>
-<p>In the example above, <span class="citation" data-cites="Cai2022-rp">Cai et al. (<a href="references.html#ref-Cai2022-rp" role="doc-biblioref">2022</a>)</span> found a funny smiley plot, where while the 3’ G to A patterns look like a classic non-UDG (i.e.&nbsp;non-USER treated, thus retaining damage) plot, the frequency of C to T on the 5’ end was extremely reduced.</p>
-<p>They identified the problem as the choice of polymerase. The Q5 polymerase is a ‘high fidelity’ enzyme, which corresponds to being a ‘proofreading’ enzyme. This means that when the enzyme hits an incorrect nucleotide (such as a deaminated cytosine), it will instead remove the nucleotide on it’s 3’ to 5’ exonuclease activity <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<p>While having a low error rate is great for modern genomics, this can be less optimal for preserving ancient DNA damage for profiling later on.</p>
-<p>In the case of this particular enzyme, it is maybe not so much of a problem as you retain the damage signal on the 3’ for proving authenticity. However this may be problematic for downstream aDNA validation tools that may have an expected ‘model’ of ancient DNA damage.</p>
+<p>In the example above, <span class="citation" data-cites="Cai2022-rp">Cai et al. (<a href="references.html#ref-Cai2022-rp" role="doc-biblioref">2022</a>)</span> found a funny smiley plot, where while the 3’ G to A patterns look like a classic non-UDG (i.e.&nbsp;non-USER treated, thus retaining damage) plot, the frequency of C to T on the 5’ end was extremely reduced. This is because of the choice of polymerase used during library amplification was not conductive to the nature of ancient DNA.</p>
+<p>In this paper, the Q5® High-Fidelity DNA Polymerase was as the polymerase for the intial amplification after adapter ligation. This polymerase has no tolerance for uracils.</p>
+<p>During amplification, when it encounters a uracil, it cannot proceed with extending the newly forming complement strand. As the original strand with the uracil will not be copied. Thus the C-to-T deamination at the 5’ termini of the reads will be absent in the plot.</p>
+<p>In contrast, the original complementary DNA strand (that contains the adenine opposite uracil), which is filled-in by T4 DNA polymerase during the blunt-ending step of the double-stranded library preparation <span class="citation" data-cites="Briggs2007-ao">(<a href="references.html#ref-Briggs2007-ao" role="doc-biblioref">Briggs et al. 2007</a>)</span>, will still be amplified by the Q5 polymerase. This means the G-to-A misincorporation pattern is retained in 3’ termini of the reads, even if the damage signal were lost on the first strand.</p>
+<p>While having a low error rate is great for modern genomics, this can be less optimal for preserving ancient DNA damage for profiling later on. Furthermore, you may have lost a fraction of true ancient DNA reads (those that have uracils in both strands).</p>
+<p>In the case of this particular enzyme, it may not too much of a problem to prove authenticity visually as you retain the damage signal on the 3’. However this may be problematic for downstream aDNA validation tools that may have an expected ‘model’ of ancient DNA damage.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -347,6 +349,9 @@ Tip
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Briggs2007-ao" class="csl-entry" role="listitem">
+Briggs, Adrian W, Udo Stenzel, Philip L F Johnson, Richard E Green, Janet Kelso, Kay Prüfer, Matthias Meyer, et al. 2007. <span>“Patterns of Damage in Genomic <span>DNA</span> Sequences from a Neandertal.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 104 (37): 14616–21. <a href="https://doi.org/10.1073/pnas.0704665104">https://doi.org/10.1073/pnas.0704665104</a>.
+</div>
 <div id="ref-Cai2022-rp" class="csl-entry" role="listitem">
 Cai, Dawei, Siqi Zhu, Mian Gong, Naifan Zhang, Jia Wen, Qiyao Liang, Weilu Sun, et al. 2022. <span>“Radiocarbon and Genomic Evidence for the Survival of Equus Sussemionus Until the Late Holocene.”</span> <em>eLife</em> 11 (May). <a href="https://doi.org/10.7554/eLife.73346">https://doi.org/10.7554/eLife.73346</a>.
 </div>
@@ -354,12 +359,6 @@ Cai, Dawei, Siqi Zhu, Mian Gong, Naifan Zhang, Jia Wen, Qiyao Liang, Weilu Sun, 
 Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
 </div>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>More information can be found on <a href="https://international.neb.com/tools-and-resources/feature-articles/polymerase-fidelity-what-is-it-and-what-does-it-mean-for-your-pcr">this blog post</a> on the NEB website<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,7 +1,7 @@
 # Left over adapter
 
 
-<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+![Menada by Maja Vukovikj (sketch converted to graphic with help from ChatGPT)](assets/images/leftover-adapter/menada.png){#fig-leftover-adapter height=500px}
 
 _CARICATURE PLOT GOES HERE_
 
