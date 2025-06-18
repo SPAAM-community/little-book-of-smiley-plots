@@ -3,8 +3,6 @@
 
 ![Menada by Maja Vukovikj (sketch converted to graphic with help from ChatGPT)](assets/images/leftover-adapter/menada.png){#fig-leftover-adapter height=500px}
 
-_CARICATURE PLOT GOES HERE_
-
 \newpage
 
 ```{r}
