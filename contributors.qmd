@@ -16,5 +16,6 @@ The following people contributed [^1] either data, caricatures, descriptions, or
 - 🇬🇧 Petra Korlević
 - 🇸🇪 Maja Vukovikj
 - 🇬🇷 Nikos Psonis
+- 🇺🇸 Christina Warinner
 
 [^1]: Flag represents institutional location at the time of contribution

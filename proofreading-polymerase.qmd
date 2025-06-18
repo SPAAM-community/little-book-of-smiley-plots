@@ -36,17 +36,17 @@ smiley_5p + smiley_3p
 Sometimes the type of polymerase you use during library construction will influence the type of damage pattern you will receive.
 
 In the example above, @Cai2022-rp found a funny smiley plot, where while the 3' G to A patterns look like a classic non-UDG (i.e. non-USER treated, thus retaining damage) plot, the frequency of C to T on the 5' end was extremely reduced.
-This is because of the choice of polymerase used during library construction was not conductive to the nature of ancient DNA.
+This is because of the choice of polymerase used during library amplification was not conductive to the nature of ancient DNA.
 
 In this paper, the Q5® High-Fidelity DNA Polymerase was as the polymerase for the intial amplification after adapter ligation.
 This polymerase has no tolerance for uracils.
 
-During replication, when it encounters a uracil, it cannot proceed with extending the newly forming complement strand. 
-As the original strand with the uracil stops early, it results in a single-stranded overhang without an adapter.
+During amplification, when it encounters a uracil, it cannot proceed with extending the newly forming complement strand. 
+As the original strand with the uracil will not be copied.
 Thus the C-to-T deamination at the 5' termini of the reads will be absent in the plot.
 
-In contrast, the original complementary DNA strand (that does not have the uracil), which is filled-in by T4 DNA polymerase during the blunt-ending step of the double-stranded library preparation [@Briggs2007-ao], will still contain the complementary A nucleotide.
-This means the G-to-A misincorporation pattern is retained in 3' termini of the reads, even if the deaminated cytosines were lost on the first strand.
+In contrast, the original complementary DNA strand (that contains the adenine opposite uracil), which is filled-in by T4 DNA polymerase during the blunt-ending step of the double-stranded library preparation [@Briggs2007-ao], will still be amplified by the Q5 polymerase.
+This means the G-to-A misincorporation pattern is retained in 3' termini of the reads, even if the damage signal were lost on the first strand.
 
 While having a low error rate is great for modern genomics, this can be less optimal for preserving ancient DNA damage for profiling later on.
 Furthermore, you may have lost a fraction of true ancient DNA reads (those that have uracils in both strands).
