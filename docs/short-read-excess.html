@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Little Book of Smiley Plots - 7&nbsp; Soft-clipping</title>
+<title>The Little Book of Smiley Plots - 9&nbsp; Excess of Short Reads</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./leftover-adapter.html" rel="next">
-<link href="./barcode-ligation-bias.html" rel="prev">
+<link href="./problematic.html" rel="next">
+<link href="./leftover-adapter.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -103,7 +103,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./semi-problematic.html">Half Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./softclipping.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./semi-problematic.html">Half Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./short-read-excess.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Excess of Short Reads</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -230,7 +230,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./softclipping.html" class="sidebar-item-text sidebar-link active">
+  <a href="./softclipping.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></span></a>
   </div>
 </li>
@@ -242,7 +242,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./short-read-excess.html" class="sidebar-item-text sidebar-link">
+  <a href="./short-read-excess.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Excess of Short Reads</span></span></a>
   </div>
 </li>
@@ -288,9 +288,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./semi-problematic.html">Half Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./softclipping.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./semi-problematic.html">Half Valid Smiley Plots</a></li><li class="breadcrumb-item"><a href="./short-read-excess.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Excess of Short Reads</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Soft-clipping</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Excess of Short Reads</span></h1>
 </div>
 
 
@@ -307,30 +307,33 @@ div.csl-indent {
 </header>
 
 
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
 <!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
 <p><em>CARICATURE PLOT GOES HERE</em></p>
 <div style="page-break-after: always;"></div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-softclipping" class="quarto-figure quarto-figure-center quarto-float anchored">
+<div id="fig-short-read-excess" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-softclipping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="softclipping_files/figure-html/fig-softclipping-1.png" class="img-fluid figure-img" width="672">
+<div aria-describedby="fig-short-read-excess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="short-read-excess_files/figure-html/fig-short-read-excess-1.png" class="img-fluid figure-img" width="672">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-softclipping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7.1: Example of a smiley plot of soft-clipped ancient DNA data as represented in <a href="./intro.md">PyDamage</a> output. Data taken from an unpublished library. Plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>. Note that the smiley plot above is not the ‘typical’ PyDamage output, however it is a simplified version of the ‘C to T transitions’ line in PyDamage plots represented here for illustrative purposes.
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-short-read-excess-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: Example of a smiley plot with an excess of very short (&lt;30bp) reads suppressing the damage signal (top), whereas removing reads less than 30bp reveals a perfect double-stranded non-UDG treated damage pattern (bottom). Data taken from mapping sequenced reads against the assembled Cand. Rokubacteria contigs of sample H22-8 of <span class="citation" data-cites="Wegner2023-ca">(<a href="references.html#ref-Wegner2023-ca" role="doc-biblioref">Wegner et al. 2023</a>)</span>. Damage data was re-generated from the original BAM files using <a href="./intro.html">DamageProfiler</a> and plotted using R and tidyverse packages <span class="citation" data-cites="Wickham2019-ot">(<a href="references.html#ref-Wickham2019-ot" role="doc-biblioref">Wickham et al. 2019</a>)</span>.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>This smiley plot can often be seen when using certain short-read mapping settings. In particular researchers using the aligner <code>bowtie2</code> with one of the <code>local</code> modes will often see 0% damage on the first couple of positions from the end of the read, but then the subsequent frequencies along the remainder of the read will have a ‘typical’ damage pattern curve.</p>
-<p>When in <code>local</code> mode, the aligner will allow ‘soft-clipping’. Soft-clipping was introduced to aligners when the length of DNA sequencing data increased and alignment issues occurred, e.g.&nbsp;transcriptome data could not be aligned due to the splicing of RNA. Therefore, the aligner gained the ability to keep alignments when only the inner-portion of the read maps optimally to the reference genome. In soft-clipping, the aligner will ‘ignore’ the ends of the reads and not use this information for evaluating the final alignment, however, it will retain those nucleotides in the alignment file. This is opposed to hard-clipping, during which these bases are entirely removed and are therefore ‘lost’ to downstream processes. This is commonly performed in modern DNA studies but can lead to issues in ancient DNA studies.</p>
-<p>For example, the aligner may clip off read ends that have damage because it is alignment-wise better than having three consecutive bases that have damage.</p>
-<p>In such cases, a researcher can try to use the <code>global</code> alignment mode in such such aligners (e.g.&nbsp;with <code>--sensitive</code> rather than <code>--sensitive-local</code> in <code>bowtie2</code>). Otherwise, if the pattern is sufficiently strong (and the alignments are trusted), a researcher can still use the plot and data as long as the pattern of the missing first few bases is described.</p>
+<p>In the top smiley plot you see an odd pattern of a set of very spikey background peaks despite smooth C to T/G and A lines, and rather than an exponential decay curve the C to T and G to A lines have a an elevated ‘hump’ between 0-14 bp and then a flat line after 14bp. In contrast, the bottom smiley plot of the same sample shows a perfect double-stranded non-UDG treated library damage pattern.</p>
+<p>So what was the difference?!</p>
+<p>In this case <span class="citation" data-cites="Wegner2023-ca">Wegner et al. (<a href="references.html#ref-Wegner2023-ca" role="doc-biblioref">2023</a>)</span> identified the artefact in the top plot as a result of unfiltered ultra-short reads (&lt;30bp) mapping to the assembled contigs of their assembled genomes. This can be seen in the the fact that much of the frequency of the ‘spikey’ misincorporations are concentrated in the first 14bp of the reads, but the remaining of the curve (i.e.&nbsp;in teh longer reads) is nice and smooth. Without sufficient length and mapping quality filtering, these ultra short reads resulted in unspecific mapping distributed across the contigs as well as in some cases in stacking in ‘conserved’ regions of the contigs. After re-filtering to remove all reads below 30bp, the artefact disappeared and a beautiful damage pattern emerged.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Wegner2023-ca" class="csl-entry" role="listitem">
+Wegner, Carl-Eric, Raphaela Stahl, Irina Velsko, Alex Hübner, Zandra Fagernäs, Christina Warinner, Robert Lehmann, Thomas Ritschel, Kai U Totsche, and Kirsten Küsel. 2023. <span>“A Glimpse of the Paleome in Endolithic Microbial Communities.”</span> <em>Microbiome</em> 11 (1): 210. <a href="https://doi.org/10.1186/s40168-023-01647-2">https://doi.org/10.1186/s40168-023-01647-2</a>.
+</div>
 <div id="ref-Wickham2019-ot" class="csl-entry" role="listitem">
 Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
@@ -892,13 +895,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./barcode-ligation-bias.html" class="pagination-link" aria-label="Internal Barcode Ligation Bias">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Internal Barcode Ligation Bias</span></span>
+      <a href="./leftover-adapter.html" class="pagination-link" aria-label="Left over adapter">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Left over adapter</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./leftover-adapter.html" class="pagination-link" aria-label="Left over adapter">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Left over adapter</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./problematic.html" class="pagination-link" aria-label="Invalid Smiley Plots">
+        <span class="nav-page-text">Invalid Smiley Plots</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
