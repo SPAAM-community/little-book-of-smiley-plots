@@ -69,3 +69,4 @@ license: CC0-1.0
 license-url: https://github.com/SPAAM-community/little-book-of-smiley-plots/blob/main/LICENSE
 repository-code: "https://github.com/SPAAM-community/little-book-of-smiley-plots/"
 url: "https://www.spaam-community.org/little-book-of-smiley-plots/"
+type: book
