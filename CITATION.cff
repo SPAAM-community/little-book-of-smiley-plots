@@ -63,3 +63,9 @@ keywords:
   - reference guide
   - damage patterns
   - misincorporation patterns
+version: "1.0.0"
+date-released: "2025-09-21"
+license: CC0-1.0
+repository-code: "https://github.com/SPAAM-community/little-book-of-smiley-plots/"
+url: "https://www.spaam-community.org/little-book-of-smiley-plots/"
+type: book
