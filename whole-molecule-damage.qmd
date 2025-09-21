@@ -10,7 +10,7 @@ _CARICATURE PLOT GOES HERE_
 
 ```{r}
 #| label: fig-template
-#| fig-cap: Example of a smiley plot of a single stranded library from an ancient hair sample  with elevated C to T throughout the entire molecule. where the DNA received damage . Data taken from library KDR001.B0101 of [@TEMPLATE]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| fig-cap: Example of a smiley plot of a single stranded library from an ancient hair sample  with elevated C to T throughout the entire molecule. where the DNA received damage . Data taken from library KDR001.B0101 of [@Wang2022-mb]. Damage data generated using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
 #| echo: false
 #| warning: false
 #| error: false
@@ -38,12 +38,13 @@ smiley_5p + smiley_3p
 
 ```
 
-In this unusual smiley plot, we see elevated C to T misincorporation frequencies across the _entire_ span of the molecules (at around 10%), with the single-stranded library only presenting modest increases more than this in the first few nucleotides. This is contrast to our normal expectation of significantly increased frequencies at the read termini.
+In this unusual smiley plot, we see elevated C to T misincorporation frequencies across the _entire_ span of the molecules (at around 10%), with the single-stranded library only presenting modest increases more than this in the first few nucleotides. This is contrast to our normal expectation of significantly increased frequencies only at the read termini.
 
-Interestingly, this is not necessarily an invalid smiley plot.
-In this special case, the ancient DNA is in fact unusually derived from an ancient hair sample.
-Wang and colleagues interpreted this damage pattern to be unique to sample types like hair, that contain DNA that have already undergone extensive and accelerated fragmentation and damage from sunlight radiation during the life of the individual [@CITE]. This is particularly the case for the DNA from this individual, as the individual lived in Sudan, Africa, a region has long periods of intense sunlight. Furthermore, the dry and arid environment may have reduced enzymatic activity and hydrolytic reactions that is the typical mechanism for causing the damage at the molecular termini. 
+Interestingly, this is not necessarily an invalid smiley plot. In this special case, the ancient DNA is in fact unusually derived from an ancient hair sample.
+@Wang2022-mb interpreted this damage pattern to be unique to sample types like hair, that contain DNA that have already undergone extensive and accelerated fragmentation and damage from sunlight radiation during the life of the individual.
+This is particularly the case for the DNA from this individual, as the individual lived in Sudan, Africa, a region that long periods of intense sunlight.
+Furthermore, the dry and arid environment may have reduced enzymatic activity and hydrolytic reactions that is the typical mechanism for causing the damage at the molecular termini [@Wang2022-mb]. 
 
-This exceptional damage is also reflected in the shorter-median fragment length of the library, with a significant number of molecules being shorter than an equivalent bone sample [@CITE], as well the C to T misincorporation frequencies elevated at both the 5p and 3p ends (rather than G to A in the 3p), as to be expected from [single-stranded libraries](single-stranded.qmd).
+This exceptional damage is also reflected in the shorter-median fragment length of the library, with a significant number of molecules being shorter than an equivalent bone sample [@Wang2022-mb], as well the C to T misincorporation frequencies elevated at both the 5p and 3p ends (rather than G to A in the 3p), as to be expected from [single-stranded libraries](single-stranded.qmd).
 
-Despite the unusual damage pattern, after reducing typical read-length filters of 30bp to 25bp, the authors did not detect any major effects in downstream analysis of the shotgun data and were able to perform routine human population genetics analysis as normal.
+Despite the unusual damage pattern, after reducing typical read-length filters of 30bp to 25bp, the authors did not detect any major effects in downstream analysis of the shotgun data. They were able to perform routine human population genetics analysis as normal.
