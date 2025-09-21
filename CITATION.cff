@@ -1,13 +1,48 @@
 cff-version: 1.2.0
-abstract: |
-  A key part of any ancient DNA project is to show that the DNA is exactly that - that the DNA is ancient, rather than from modern contamination.
-  A key authentication method is to show the presence of elevated C to T deamination patterns (and the complementary G to A) at the end of DNA molecules - known as damage patterns - originally reported by (Briggs et al. 2007).
-  These patterns can be plotted in what have been colloquially known as ’Smiley Plots. However, there can be a wide range of smiley plots, some which show valid ancient DNA, and others that do not - either due to not actually having true ancient DNA but also from laboratory and/or bioinformatic artifacts.
-  This book aims to act as a reference guide to interpreting ancient DNA damage plots, providing a wide range of example ‘smiley plots’, with descriptions of what the describe and what can cause them. As an added bit of fun, each type of smiley plot comes with a artistic interpretation of the line shape contributed by members of the ancient DNA community.
 authors:
   - family-names: Fellows Yates
     given-names: James A.
     orcid: https://orcid.org/0000-0001-5585-6277
+  - family-names: Zeibig
+    given-names: Teresa
+    orcid: https://orcid.org/0009-0000-2068-3505
+  - family-names: Andrades Valtueña
+    given-names: Aida
+    orcid: https://orcid.org/0000-0002-1737-2228
+  - family-names: Heintzmann
+    given-names: Pete D.
+    orcid: https://orcid.org/0000-0002-6449-0219
+  - family-names: Guschanski
+    given-names: Katerina
+    orcid: https://orcid.org/0000-0002-8493-5457
+  - family-names: Brealey
+    given-names: Jaelle C.
+    orcid: https://orcid.org/0000-0001-7068-2017
+  - family-names: Dagtas
+    given-names: Nihan D.
+    orcid: https://orcid.org/0000-0003-2658-7295
+  - family-names: Fagernäs
+    given-names: Zandra
+    orcid: https://orcid.org/0000-0003-2667-3556
+  - family-names: Santos
+    given-names: Patrícia
+  - family-names: Hübner
+    given-names: Alexander
+    orcid: https://orcid.org/0000-0003-3572-9996
+  - family-names: Wiborg Runge
+    given-names: Anne Kathrine
+    orcid: https://orcid.org/0000-0003-2421-4831
+  - family-names: Korlević
+    given-names: Petra
+    orcid: https://orcid.org/0000-0002-5418-5587
+  - family-names: Vukovikj
+    given-names: Maja
+  - family-names: Psonis
+    given-names: Nikos
+    orcid: https://orcid.org/0000-0002-2083-9001
+  - family-names: Warinner
+    given-names: Christina
+    orcid: https://orcid.org/0000-0002-4528-5877
 title: "The Little Book of Smiley Plots: A collection of ancient DNA patterns and their causes"
 version: "1.0.0"
 date-released: "2025-09-21"
