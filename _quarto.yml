@@ -20,7 +20,7 @@ book:
   bread-crumbs: true
   chapters:
     - index.qmd
-    - contributors.qmd
+    - contributors_and_citation.qmd
     - intro.qmd
     - part: valid.qmd
       chapters:

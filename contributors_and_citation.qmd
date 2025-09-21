@@ -1,4 +1,4 @@
-# Contributors {.unnumbered}
+# Contributors and Citation {.unnumbered}
 
 The following people contributed [^1] either data, caricatures, descriptions, or other suggestions to the little book.
 
@@ -19,3 +19,7 @@ The following people contributed [^1] either data, caricatures, descriptions, or
 - 🇺🇸 Christina Warinner
 
 [^1]: Flag represents institutional location at the time of contribution
+
+To reference this book, please cite:
+
+> Fellows Yates, J. A., Zeibig, T., Andrades Valtueña, A., Heintzmann, P. D., Guschanski, K., Brealey, J. C., Dagtas, N. D., Fagernäs, Z., Santos, P., Hübner, A., Wiborg Runge, A. K., Korlević, P., Vukovikj, M., Psonis, N., & Warinner, C. (2025). The Little Book of Smiley Plots: A collection of ancient DNA patterns and their causes. Zenodo. [https://doi.org/10.5281/zenodo.17170743](https://doi.org/10.5281/zenodo.17170743)
