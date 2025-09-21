@@ -198,5 +198,16 @@
     "crumbs": [
       "References"
     ]
+  },
+  {
+    "objectID": "whole-molecule-damage.html",
+    "href": "whole-molecule-damage.html",
+    "title": "9  Whole molecular damage (Hair)",
+    "section": "",
+    "text": "CARICATURE PLOT GOES HERE\n\n\n\n\n\n\n\n\n\nFigure 9.1: Example of a smiley plot of a single stranded library from an ancient hair sample with elevated C to T throughout the entire molecule. where the DNA received damage . Data taken from library KDR001.B0101 of (TEMPLATE?). Damage data generated using DamageProfiler and plotted using R and tidyverse packages (Wickham et al. 2019).\n\n\n\n\n\nIn this unusual smiley plot, we see elevated C to T misincorporation frequencies across the entire span of the molecules (at around 10%), with the single-stranded library only presenting modest increases more than this in the first few nucleotides. This is contrast to our normal expectation of significantly increased frequencies at the read termini.\nInterestingly, this is not necessarily an invalid smiley plot. In this special case, the ancient DNA is in fact unusually derived from an ancient hair sample. Wang and colleagues interpreted this damage pattern to be unique to sample types like hair, that contain DNA that have already undergone extensive and accelerated fragmentation and damage from sunlight radiation during the life of the individual (CITE?). This is particularly the case of the DNA from this individual, as the individual lived in Sudan, Africa, a region has long periods of intense sunlight. Furthermore, the dry and arid environment may have reduced enzymatic activity and hydrolytic reactions that is the typical mechanism for causing the damage at the molecular termini.\nThis exceptional damage is also reflected in the shorter-median fragment length of the library, with a significant number of molecules being shorter than an equivalent bone sample (CITE?), as well the C to T misincorporation frequencies elevated at both the 5p and 3p ends (rather than G to A in the 3p), as to be expected from single-stranded libraries.\nDespite the unusual damage pattern, after reducing typical read-length filters of 30bp to 25bp, the authors did not detect any major effects in downstream analysis of the shotgun data and were able to perform routine human population genetics analysis\n\n\n\n\nWickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the Tidyverse.” Journal of Open Source Software 4 (43): 1686. https://doi.org/10.21105/joss.01686.",
+    "crumbs": [
+      "Half Valid Smiley Plots",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Whole molecular damage (Hair)</span>"
+    ]
   }
 ]
