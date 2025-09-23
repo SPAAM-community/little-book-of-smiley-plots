@@ -47,4 +47,4 @@ Furthermore, the dry and arid environment may have reduced enzymatic activity an
 
 This exceptional damage is also reflected in the shorter-median fragment length of the library, with a significant number of molecules being shorter than an equivalent bone sample [@Wang2022-mb], as well the C to T misincorporation frequencies elevated at both the 5p and 3p ends (rather than G to A in the 3p), as to be expected from [single-stranded libraries](single-stranded.qmd).
 
-Despite the unusual damage pattern, after reducing typical read-length filters of 30bp to 25bp, the authors did not detect any major effects in downstream analysis of the shotgun data. They were able to perform routine human population genetics analysis as normal.
+Despite the unusual damage pattern, after reducing typical read-length filters of 30bp to 25bp, the authors obtained extremely low-coverage data, which were however sufficient to place the individual into regional ancestry within Eastern Africa using routine human population genetics analysis.
