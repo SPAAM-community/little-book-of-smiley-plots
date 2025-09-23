@@ -35,6 +35,7 @@ book:
         - softclipping.qmd
         - leftover-adapter.qmd
         - short-read-excess.qmd
+        - whole-molecule-damage.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd
