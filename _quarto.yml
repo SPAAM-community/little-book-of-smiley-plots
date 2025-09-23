@@ -20,7 +20,7 @@ book:
   bread-crumbs: true
   chapters:
     - index.qmd
-    - contributors.qmd
+    - contributors_and_citation.qmd
     - intro.qmd
     - part: valid.qmd
       chapters:
@@ -34,6 +34,7 @@ book:
         - barcode-ligation-bias.qmd
         - softclipping.qmd
         - leftover-adapter.qmd
+        - short-read-excess.qmd
         - whole-molecule-damage.qmd
     - part: problematic.qmd
       chapters:

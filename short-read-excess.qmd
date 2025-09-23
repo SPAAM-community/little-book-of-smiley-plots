@@ -1,0 +1,55 @@
+<!-- TEMPLATE COPY CONTENTS OF THIS FILE FOR NEW PROFILES-->
+
+# Excess of Short Reads
+
+<!-- ![_CAPTION GOES HERE](assets/images/512px-Salvador_dali_als_Auge.jpg){#fig-double-stranded-caricature} -->
+
+_CARICATURE PLOT GOES HERE_
+
+\newpage
+
+```{r}
+#| label: fig-short-read-excess
+#| fig-cap: Example of a smiley plot with an excess of very short (<30bp) reads suppressing the damage signal (top), whereas removing reads less than 30bp reveals a perfect double-stranded non-UDG treated damage pattern (bottom). Data taken from mapping sequenced reads against the assembled Cand. Rokubacteria contigs of sample H22-8 of [@Wegner2023-ca]. Damage data was re-generated from the original BAM files using [DamageProfiler](/intro.qmd) and plotted using R and tidyverse packages [@Wickham2019-ot].
+#| echo: false
+#| warning: false
+#| error: false
+
+library(readr)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+source("assets/src/R/style.r")
+source("assets/src/R/damage-profiler.r")
+type_colours <- type_colours_dp
+
+raw_5p <- readr::read_tsv("assets/data/short-read-excess/5p_freq_misincorporations.txt", comment = "#")
+raw_3p <- readr::read_tsv("assets/data/short-read-excess/3p_freq_misincorporations.txt", comment = "#")
+raw_5p_after <- readr::read_tsv("assets/data/short-read-excess/5p_freq_misincorporations_after.txt", comment = "#")
+raw_3p_after <- readr::read_tsv("assets/data/short-read-excess/3p_freq_misincorporations_after.txt", comment = "#")
+
+long_5p <- pivot_longer_freqmisincorporat(raw_5p, reverse = FALSE, type_colours = type_colours, xaxis_limit = 25)
+long_3p <- pivot_longer_freqmisincorporat(raw_3p, reverse = TRUE, type_colours = type_colours, xaxis_limit = 25)
+long_5p_after <- pivot_longer_freqmisincorporat(raw_5p_after, reverse = FALSE, type_colours = type_colours, xaxis_limit = 25)
+long_3p_after <- pivot_longer_freqmisincorporat(raw_3p_after, reverse = TRUE, type_colours = type_colours, xaxis_limit = 25)
+
+smiley_5p <- plot_longer_freqmisincorporat(long_5p, reverse = FALSE, type_colours, xaxis_limit = 25)
+smiley_3p <- plot_longer_freqmisincorporat(long_3p, reverse = TRUE, type_colours, xaxis_limit = 25)
+smiley_5p_after <- plot_longer_freqmisincorporat(long_5p_after, reverse = FALSE, type_colours, xaxis_limit = 25)
+smiley_3p_after <- plot_longer_freqmisincorporat(long_3p_after, reverse = TRUE, type_colours, xaxis_limit = 25)
+
+(smiley_5p + smiley_3p) /
+    (smiley_5p_after + smiley_3p_after)
+
+```
+
+In the top smiley plot you see an odd pattern of a set of very spikey background peaks despite smooth C to T/G and A lines, and rather than an exponential decay curve the C to T and G to A lines have a an elevated 'hump' between 0-14 bp and then a flat line after 14bp.
+In contrast, the bottom smiley plot of the same sample shows a perfect double-stranded non-UDG treated library damage pattern.
+
+So what was the difference?!
+
+In this case @Wegner2023-ca identified the artefact in the top plot as a result of unfiltered ultra-short reads (<30bp) mapping to the assembled contigs of their assembled  genomes.
+This can be seen in the the fact that much of the frequency of the 'spikey' misincorporations are concentrated in the first 14bp of the reads, but the remaining of the curve (i.e. in teh longer reads) is nice and smooth.
+Without sufficient length and mapping quality filtering, these ultra short reads resulted in unspecific mapping distributed across the contigs as well as in some cases in stacking in 'conserved' regions of the contigs.
+After re-filtering to remove all reads below 30bp, the artefact disappeared and a beautiful damage pattern emerged.
