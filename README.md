@@ -1,5 +1,7 @@
 # The Little Book of Smiley Plots: A collection of ancient DNA damage plots and their causes
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17170743.svg)](https://doi.org/10.5281/zenodo.17170743)
+
 This repository contains a examples of different types of ancient DNA damage plots, both valid and invalid, and describes the causes behind them.
 
 ## Technical guidelines
