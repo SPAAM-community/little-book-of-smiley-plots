@@ -34,6 +34,7 @@ book:
         - barcode-ligation-bias.qmd
         - softclipping.qmd
         - leftover-adapter.qmd
+        - short-read-excess.qmd
     - part: problematic.qmd
       chapters:
         - insufficient-reads.qmd
